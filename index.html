@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yolanda Lizano - WDD230 - Web Frontend Development</title>
-    <meta name="description" content="Yolanda Lizano - WDD230 - course assignment portal"
-    <meta name="author" content="Yolanda Lizano"
+    <meta name="description" content="Yolanda Lizano - WDD230 - course assignment portal">
+    <meta name="author" content="Yolanda Lizano">
 
     <link href="styles/base.css" rel="stylesheet">
     <link href="styles/larger.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https:/fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
-    rel="stylesheet" 
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <img src="images/photo2.jpg" alt="Yolanda Lizano Arauz" width="75" height="100"> Yolanda Lizano Arauz
-        
     </header>
     <nav>
         <ul>
@@ -29,42 +26,40 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
-<main>
-    <h1>WDD230: Web Frontend Development</h1>
-    <section>
-        <h2 class="card"> Learning Activity</h2>
-        <ul>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Home</a></li>
-        </ul>
-    </section>
+    <main>
+        <h1>WDD230: Web Frontend Development</h1>
+        <section>
+            <h2 class="card"> Learning Activity</h2>
+            <ul>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </section>
 
-    <section>
-        <h2 class="card"> Information</h2>
-        <ul>
-            <li>City: Tulsa, Oklahoma</li>
-            <li>Weather: Sunny</li> 
-            <li>Number of visits: 10</li>
-        </ul>
-    </section>
-
+        <section>
+            <h2 class="card"> Information</h2>
+            <ul>
+                <li>City: Tulsa, Oklahoma</li>
+                <li>Weather: Sunny</li> 
+                <li>Number of visits: 10</li>
+            </ul>
+        </section>
     </main>
     <footer>
         <p>
           &copy; <span id="currentYear"></span> Yolanda Lizano, <img src="images/OklahomaFlag.jpg" width="70" height="50"> Oklahoma
         </p>
         <p id="lastModified"></p>
-      </footer>
+    </footer>
     
-      <script>
+    <script>
         const currentYear = new Date().getFullYear();
         document.getElementById("currentYear").textContent = currentYear;
     
         const lastModifiedElement = document.getElementById("lastModified");
         const lastModified = new Date(document.lastModified);
         lastModifiedElement.textContent = `Last modified: ${lastModified.toLocaleString()}`;
-      </script>
-
+    </script>
 </body>
 </html>
