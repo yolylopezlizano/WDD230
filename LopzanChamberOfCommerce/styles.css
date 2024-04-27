@@ -1,0 +1,43 @@
+/* Estilos generales */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5faf5; 
+}
+
+header {
+    background-color: #1279bd;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+h2 {
+    color: #1279bd;
+}
+
+h3 {
+    color: #F39C12;
+}
+
+.color-sample {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #333; /* Borde negro */
+    box-sizing: border-box;
+}
+
+/* Estilo para los recuadros de muestra de color en la sección de Color Schema */
+#color-schema .color-sample {
+    margin-bottom: 5px;
+}
