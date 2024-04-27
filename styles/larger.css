@@ -8,51 +8,50 @@ nav li {
   display: inline-block;
 }
 
-h1.course-title {
+h2.course-title {
   text-align: center;
-  grid-column: span 2; /* Ocupa dos columnas */
+  grid-column: span 2;
 }
 
-/* Estilos para pantallas más grandes */
 @media (min-width: 768px) {
   .grid-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-      gap: 20px; /* Espacio entre columnas */
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
   }
 
   .activity, .information {
-      width: 100%; /* Ancho completo de la columna */
+      width: 100%; 
       display: flex;
-      flex-direction: column; /* Alinear contenido en columna */
-      align-items: center; /* Centrar contenido horizontalmente */
+      flex-direction: column; 
+      align-items: center; 
   }
 
-  .activity h2, .information h2 {
-      text-align: center; /* Centrar los títulos */
-      margin-bottom: 10px; /* Espacio entre el título y la lista */
+  .activity h3, .information h3 {
+      text-align: center; 
+      margin-bottom: 10px; 
   }
 
   .activity ul, .information ul {
-      padding: 0; /* Elimina el relleno */
+      padding: 0; 
   }
 
   .activity li, .information li {
-      list-style: disc; /* Añade viñetas */
-      margin-left: 20px; /* Margen izquierdo para las viñetas */
+      list-style: disc; 
+      margin-left: 20px; 
   }
 
   .activity {
-      margin-left: 10px; /* Margen izquierdo de 10px para Learning Activity */
+      margin-left: 10px; 
   }
 }
 
 .course-title {
-  background-color: #f1d8b1; /* Color de fondo */
-  padding: 10px; /* Añade espacio interno alrededor del texto */
-  text-align: center; /* Centra el texto horizontalmente */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+  background-color: #f1d8b1; 
+  padding: 10px; 
+  text-align: center; 
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 
