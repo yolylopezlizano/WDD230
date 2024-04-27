@@ -125,6 +125,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
+    margin: -100 auto;
 }
 
 .course-title {
@@ -139,18 +140,17 @@ section {
 }
 
 .activity, .information {
-  width: 100%; 
-  max-width: 400px; 
+  width: 200%; 
+  max-width: 1000px; 
   margin-bottom: 20px; 
 }
 
 @media (min-width: 350px) {
   .activity-information-container {
-      flex-direction: row;
-      justify-content: space-around; 
+      flex-direction: column; 
   }
   .activity, .information {
-      width: 45%; 
+      width: 100%; 
       max-width: none; 
   }
 }
