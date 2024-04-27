@@ -66,15 +66,13 @@ header img {
 nav {
   background-color: #79715c;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px 0;
 }
 
 .nav-container {
   background-color: #79715c;
   width: 100%; 
-  display: flex;
-  justify-content: center;
 }
 
 nav ul {
@@ -85,7 +83,7 @@ nav ul {
 }
 
 nav li {
-  display: 0 10px;;
+  display: block;
 }
 
 nav a {
