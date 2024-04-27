@@ -8,7 +8,7 @@ nav li {
   display: inline-block;
 }
 
-h2.course-title {
+h1.course-title {
   text-align: center;
   grid-column: span 2;
 }
@@ -27,7 +27,7 @@ h2.course-title {
       align-items: center; 
   }
 
-  .activity h3, .information h3 {
+  .activity h2, .information h2 {
       text-align: center; 
       margin-bottom: 10px; 
   }
