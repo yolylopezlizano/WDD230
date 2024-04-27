@@ -40,9 +40,41 @@ header img {
     margin-bottom: 10px;
 }
 
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.header-info {
+  margin-bottom: 10px; 
+}
+
+.name {
+  font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
 /* Navigation styles */
 nav {
-  background-color: #333;
+  background-color: #79715c;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-container {
+  background-color: #79715c;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
@@ -50,15 +82,13 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
 }
 
 nav li {
-  display: block;
+  display: 0 10px;;
 }
 
 nav a {
-  display: block;
   color: #fff;
   text-decoration: none;
   padding: 10px;
