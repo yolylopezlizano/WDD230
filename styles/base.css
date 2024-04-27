@@ -109,3 +109,11 @@ footer img {
     vertical-align: middle;
     margin-left: 10px;
 }
+
+.course-title {
+  background-color: #f1d8b1; /* Color de fondo */
+  padding: 10px; /* Añade espacio interno alrededor del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
