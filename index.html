@@ -13,23 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <header>
         <img src="images/photo2.jpg" width="75" height="100">
         <h1 class="name">Yolanda Lizano</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>WDD230: Web Frontend Development</h1>
-        <section>
+    <main class="grid-container">
+        <h1 class="course-title">WDD230: Web Frontend Development</h1>
+        <section class="activity">
             <h2 class="card"> Learning Activity</h2>
             <ul>
                 <li><a href="#">Chamber</a></li>
@@ -37,19 +38,20 @@
                 <li><a href="#">Home</a></li>
             </ul>
         </section>
-
-        <section>
+    
+        <section class="information">
             <h2 class="card"> Information</h2>
             <ul>
                 <li>City: Tulsa, Oklahoma</li>
-                <li>Weather: Sunny</li> 
+                <li>Weather: ☀ Sunny</li>
                 <li>Number of visits: 10</li>
             </ul>
         </section>
     </main>
+    
     <footer>
         <p>
-          &copy; <span id="currentYear"></span> Yolanda Lizano, <img src="images/OklahomaFlag.jpg" width="70" height="50"> Oklahoma
+            &copy; <span id="currentYear"></span> Yolanda Lizano, <img src="images/OklahomaFlag.jpg" width="70" height="50"> Oklahoma
         </p>
         <p id="lastModified"></p>
     </footer>
