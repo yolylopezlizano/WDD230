@@ -3,17 +3,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-  text-align: center; /* Centra el texto del encabezado */
-}
-
-main, footer {
+header, main, footer {
   max-width: 640px;
   margin: 1rem auto;
   border: 1px solid #bbb;
   padding: 1rem;
-  background-color: #d3dee9;
-  border-radius: 5px; /* Añadimos bordes redondeados */
+  background-color: #e6f2ff;
 }
 
 main {
@@ -25,13 +20,18 @@ main {
 section {
   padding: 1rem;
   background-color: #fff;
-  border-radius: 5px; /* Añadimos bordes redondeados */
 }
 
-@media screen and (min-width: 500px) {
-  header, main, footer {
-    max-width: none;
-  }
+.scripture:nth-child(1) {
+  position: relative;
+  z-index: 2;
 }
+
+.scripture:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+
+
 
   
