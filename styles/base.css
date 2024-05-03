@@ -75,13 +75,14 @@ h1 {
 
 /* Navigation styles */
 nav {
-    background-color: #79715c;
+    background-color: #a69b80;
     display: flex;
-    padding: 10px 0;
+    justify-content: center;
+    padding: 0px 0;
 }
 
 .nav-container {
-    background-color: #79715c;
+    background-color: #a69b80;
     width: 100%;
 }
 
@@ -93,6 +94,7 @@ nav {
 .menu li {
     display: inline-block;
     margin-right: 20px;
+    text-align: center;
 }
 
 .menu li:last-child {
@@ -103,6 +105,7 @@ nav {
     color: rgb(252, 245, 245);
     text-decoration: none;
     padding: 10px 15px;
+    display: inline-block;
 }
 
 .menu li a:hover {
@@ -170,29 +173,27 @@ footer img {
     font-size: 22px;
 }
 
-
-.mobile-menu {
-    display: none;
-}
-
 .close-btn {
     display: none;
 }
 
 .hamburger {
-  display: block; 
-  cursor: pointer; 
-  color: #333; 
-  font-size: 24px; 
+  font-size: 24px;
+  cursor: pointer;
 }
+
 
 .desktop-menu {
   display: flex;
 }
 
 .desktop-menu .menu {
-  list-style-type: none; 
-  display: flex;
+  margin-right: 20px;
+  display: inline-block; 
+}
+
+.desktop-menu .menu {
+  display: block;
 }
 
 .desktop-menu .menu li {
@@ -203,34 +204,131 @@ footer img {
   margin-right: 0; 
 }
 
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
 .menu li a {
-  color: white; 
+  color: #000; /* Color del texto para el menú hamburguesa */
   text-decoration: none;
-  padding: 10px 15px;
-  display: block; 
+  font-size: 16px;
 }
 
 .desktop-menu .menu li a {
-  color: white; 
-  text-decoration: none; 
-  padding: 10px 15px; 
+  color: #fff; /* Color del texto blanco */
+  text-decoration: none; /* Eliminar subrayado */
+  padding: 10px 15px; /* Ajuste del espacio alrededor del texto */
+  display: inline-block; /* Mostrar elementos en línea */
 }
 
 .menu li a:hover {
   background-color: #e9c19a;
 }
+.mobile-menu {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu .menu {
+  display: none;
+}
+
+/* Estilos para el menú hamburguesa */
+.mobile-menu .hamburger {
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+.mobile-menu .menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu .menu li {
+  margin-bottom: 10px;
+}
 
 
 @media screen and (max-width: 768px) {
   .desktop-menu {
-      display: none;
+    display: none; /* Oculta el menú principal cuando la pantalla es pequeña */
+  }
+
+  .mobile-menu .menu {
+    display: block; /* Muestra el menú móvil */
+  }
+
+  .menu li {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu li a {
+    display: block;
+  }
+
+  .activity, .information {
+    flex-basis: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media (min-width: 769px) {
+  .desktop-menu {
+    display: block;
+  }
+
+  .menu {
+    display: block;
   }
 
   .mobile-menu {
-      display: block;
+    display: flex;
   }
+  .hamburger {
+    display: none;
+  }  
+}
 
-  .mobile-menu .menu li {
-      text-align: center;
-  }
+/* Estilos generales para el modo oscuro */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff; /* Color de texto en modo oscuro */
+}
+
+/* Anula o sobrescribe estilos específicos de cada elemento que necesites cambiar */
+body.dark-mode h1 {
+  color: #ffffff; /* Cambia el color del texto de los encabezados h1 en modo oscuro */
+}
+
+body.dark-mode p {
+  color: #fdfdfd; /* Cambia el color del texto de los párrafos en modo oscuro */
+}
+
+body.dark-mode .information {
+  background-color: #333333; /* Cambia el color de fondo de la sección Information a gris oscuro */
+  color: #cccccc; /* Cambia el color del texto de la sección Information a gris */
+}
+
+body.dark-mode .header-content {
+  background-color: #000000; /* Cambia el color de fondo de la parte superior a negro */
+}
+
+.container {
+  background-color: #000000; /* Cambia el color de fondo del contenedor principal a negro */
 }
