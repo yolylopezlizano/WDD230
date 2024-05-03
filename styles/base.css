@@ -41,128 +41,196 @@ header img {
 }
 
 .header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-info {
-  margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .name {
-  font-size: 2em;
+    font-size: 2em;
     font-weight: bold;
     color: #333;
 }
 
 h1 {
-  text-align: center; 
-  border: none; 
-  padding: 10px; 
-  margin: 20px auto; 
-  margin-bottom: 20px; 
-  max-width: 400px; 
-  box-sizing: border-box; 
-  text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Navigation styles */
 nav {
-  background-color: #79715c;
-  display: flex;
-  padding: 10px 0;
+    background-color: #79715c;
+    display: flex;
+    padding: 10px 0;
 }
 
 .nav-container {
-  background-color: #79715c;
-  width: 100%; 
+    background-color: #79715c;
+    width: 100%;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
+.menu {
+  padding: 20px 0; 
+  text-align: center;
 }
 
-nav li {
-  display: block;
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
+.menu li:last-child {
+    margin-right: 0;
 }
 
-nav a:hover {
-  background-color: #555;
+.menu li a {
+    color: rgb(252, 245, 245);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.menu li a:hover {
+    background-color: #e9c19a;
 }
 
 /* Main styles */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     margin-bottom: 25px;
 }
 
-.card {
-    background-color: #efece5;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-
-.course-title {
-  text-align: center; 
-  margin-bottom: 20px; 
-}
-
-.activity-information-container {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-}
-
-.activity, .information {
-  width: 200%; 
-  max-width: 1000px; 
-  margin-bottom: 20px; 
-}
-
-@media (min-width: 350px) {
-  .activity-information-container {
-      flex-direction: column; 
-  }
-  .activity, .information {
-      width: 100%; 
-      max-width: none; 
-  }
-}
-  
 /* Footer styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #7c6d50;
-    color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #7c6d50;
+  color: #fff;
 }
 
 footer img {
-    vertical-align: middle;
-    margin-left: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.activity-information-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.activity, .information {
+    flex-basis: calc(50% - 20px); 
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.activity {
+    background-color: #f4ede0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.information {
+    background-color: #f4ede0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.activity h2, .information h2 {
+    font-size: 24px;
+    color: #562407; 
+}
+
+.activity a, .information a {
+    font-size: 22px;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+.close-btn {
+    display: none;
+}
+
+.hamburger {
+  display: block; 
+  cursor: pointer; 
+  color: #333; 
+  font-size: 24px; 
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+.desktop-menu .menu {
+  list-style-type: none; 
+  display: flex;
+}
+
+.desktop-menu .menu li {
+  margin-right: 20px; 
+}
+
+.desktop-menu .menu li:last-child {
+  margin-right: 0; 
+}
+
+.menu li a {
+  color: white; 
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block; 
+}
+
+.desktop-menu .menu li a {
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+}
+
+.menu li a:hover {
+  background-color: #e9c19a;
+}
+
+
+@media screen and (max-width: 768px) {
+  .desktop-menu {
+      display: none;
+  }
+
+  .mobile-menu {
+      display: block;
+  }
+
+  .mobile-menu .menu li {
+      text-align: center;
+  }
 }
