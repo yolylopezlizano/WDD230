@@ -10,7 +10,6 @@ img {
     padding: 0;
 }
 
-/* Box sizing */
 html {
     box-sizing: border-box;
 }
@@ -19,7 +18,6 @@ html {
     box-sizing: inherit;
 }
 
-/* Body styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -27,7 +25,6 @@ body {
     color: #562407;
 }
 
-/* Header styles */
 header {
     text-align: center;
     padding: 20px;
@@ -215,16 +212,15 @@ footer img {
   margin-bottom: 10px;
 }
 .menu li a {
-  color: #000; /* Color del texto para el menú hamburguesa */
+  color: #000; 
   text-decoration: none;
   font-size: 16px;
 }
 
 .desktop-menu .menu li a {
-  color: #fff; /* Color del texto blanco */
-  text-decoration: none; /* Eliminar subrayado */
-  padding: 10px 15px; /* Ajuste del espacio alrededor del texto */
-  display: inline-block; /* Mostrar elementos en línea */
+  color: #fff; 
+  padding: 10px 15px; 
+  display: inline-block; 
 }
 
 .menu li a:hover {
@@ -239,11 +235,10 @@ footer img {
   display: none;
 }
 
-/* Estilos para el menú hamburguesa */
 .mobile-menu .hamburger {
   font-size: 24px;
   cursor: pointer;
-
+  align-items: center;
 }
 
 .mobile-menu .menu {
@@ -259,11 +254,11 @@ footer img {
 
 @media screen and (max-width: 768px) {
   .desktop-menu {
-    display: none; /* Oculta el menú principal cuando la pantalla es pequeña */
+    display: none; 
   }
 
   .mobile-menu .menu {
-    display: block; /* Muestra el menú móvil */
+    display: block; 
   }
 
   .menu li {
@@ -305,30 +300,30 @@ footer img {
   }  
 }
 
-/* Estilos generales para el modo oscuro */
+
 body.dark-mode {
   background-color: #1a1a1a;
-  color: #ffffff; /* Color de texto en modo oscuro */
+  color: #ffffff; 
 }
 
-/* Anula o sobrescribe estilos específicos de cada elemento que necesites cambiar */
+
 body.dark-mode h1 {
-  color: #ffffff; /* Cambia el color del texto de los encabezados h1 en modo oscuro */
+  color: #ffffff; 
 }
 
 body.dark-mode p {
-  color: #fdfdfd; /* Cambia el color del texto de los párrafos en modo oscuro */
+  color: #fdfdfd; 
 }
 
 body.dark-mode .information {
-  background-color: #333333; /* Cambia el color de fondo de la sección Information a gris oscuro */
-  color: #cccccc; /* Cambia el color del texto de la sección Information a gris */
+  background-color: #333333; 
+  color: #cccccc; 
 }
 
 body.dark-mode .header-content {
-  background-color: #000000; /* Cambia el color de fondo de la parte superior a negro */
+  background-color: #000000; 
 }
 
 .container {
-  background-color: #000000; /* Cambia el color de fondo del contenedor principal a negro */
+  background-color: #000000; 
 }
