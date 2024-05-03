@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +19,10 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.search.yahoo.com/images/view;_ylt=AwrO87Y2.zNmbEUEZb6JzbkF;_ylu=c2VjA3NyBHNsawNpbWcEb2lkAzExZTA0NTM5ZGJlNzM4Mzk4YjdiOWU0ZDMxMDhiZmI1BGdwb3MDMjIEaXQDYmluZw--?back=https%3A%2F%2Fimages.search.yahoo.com%2Fsearch%2Fimages%3Fp%3DFacebook%2BLogo%2BIcon%26type%3DE210US0G0%26fr%3Dmcafee%26fr2%3Dp%253As%252Cv%253Ai%252Cm%253Ars-algo-rel%26tab%3Dorganic%26ri%3D22&w=2225&h=2176&imgurl=www.freeiconspng.com%2Fuploads%2Ffacebook-logo-facebook-logo-9.png&rurl=https%3A%2F%2Fgaleridandhung.blogspot.com%2F2021%2F08%2Ffacebook-png-50-best-facebook-logo.html&size=174.6KB&p=Facebook+Logo+Icon&oid=11e04539dbe738398b7b9e4d3108bfb5&fr2=p%3As%2Cv%3Ai%2Cm%3Ars-algo-rel&fr=mcafee&tt=Facebook+Png+-+50%2B+Best+Facebook+Logo+Icons%2C+GIF%2C+Transparent+PNG+Images+%2F+All+images+and+logos+...&b=0&ni=390&no=22&ts=&tab=organic&sigr=TiMh.XS2xSPh&sigb=jLOC0ef81JGK&sigi=JxRoWHx9VlMh&sigt=jX1baFq7RkZi&.crumb=aaQIcjlYuxl&fr=mcafee&fr2=p%3As%2Cv%3Ai%2Cm%3Ars-algo-rel&type=E210US0G0">
     <meta property="og:url" content="https://www.facebook.com/emilylopez2011/">
-
 </head>
 <body>
+    <button id="toggle-dark-mode">Activar Modo Oscuro</button> 
+
     <header class="header-container">
         <div class="header-content">
             <div class="header-info">
@@ -28,16 +30,20 @@
             </div>
             <span class="name">Yolanda Lizano</span>
         </div>
-        <div class="nav-container">
-            
+        <nav class="nav-container">
             <div class="hamburger" onclick="toggleMenu()">
                 &#9776;
             </div>
-            
             <div class="mobile-menu" id="mobileMenu">
-                
                 <span class="close-btn" onclick="toggleMenu()">✕</span>
-                
+                <ul class="menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="#">Form</a></li>
+                </ul>
+            </div
+            <div class="desktop-menu">
                 <ul class="menu">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">Chamber</a></li>
@@ -45,32 +51,21 @@
                     <li><a href="#">Form</a></li>
                 </ul>
             </div>
-            
-            <div class="desktop-menu">
-                <ul class="menu"></ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Chamber</a></li>
-                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-                    <li><a href="#">Form</a></li>
-                </ul>
-            </div>
-
+        </nav> 
     </header>
 
-    <button id="toggle-dark-mode">Activar Modo Oscuro</button>
-    
     <main class="grid-container">
         <div class="course-title">
             <h1>WDD230: Web Frontend Development</h1>
         </div>
-        <div class="activity-information-container">
+        <nav class="activity-information-container">
             <section class="activity">
                 <h2 class="card"> Learning Activity</h2>
                 <ul>
                     <li><a href="#">Chamber</a></li>
                     <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Form</Form></a></li>
+                    <li><a href="#">Form</a></li>
                 </ul>
             </section>
     
@@ -82,7 +77,7 @@
                     <li>Number of visits: 10</li>
                 </ul>
             </section>
-        </div>
+        </nav>
     </main>
     
     <footer>
