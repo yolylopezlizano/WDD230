@@ -41,3 +41,16 @@ h3 {
 #color-schema .color-sample {
     margin-bottom: 5px;
 }
+
+footer {
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Añade espaciado alrededor del contenido */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+
+.return-home {
+    display: inline-block; /* Permite que el ancho del contenedor se ajuste al contenido */
+    padding: 10px 20px; /* Añade espaciado alrededor del contenido */
+    border: 2px solid #2E86C1; /* Añade un borde sólido */
+    border-radius: 10px; /* Añade bordes redondeados */
+}
