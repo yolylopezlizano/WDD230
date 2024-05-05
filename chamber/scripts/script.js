@@ -27,3 +27,21 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Tulsa&aqi=no`)
     descriptionElement.textContent = weatherDescription;
     weatherIconElement.src = weatherIconUrl; // Establece el enlace directo al icono del clima como la fuente de la imagen
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".menu");
+
+    hamburger.addEventListener("click", function() {
+        menu.classList.toggle("show");
+    });
+
+    // Controla la visibilidad del menú móvil al cambiar el tamaño de la ventana
+    window.addEventListener("resize", function() {
+        if (window.innerWidth > 768) { // Cambia 768 por el ancho máximo que desees
+            menu.classList.remove("show");
+        }
+    });
+});
+
+
