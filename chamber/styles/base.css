@@ -22,8 +22,8 @@ body {
     line-height: 1;
     margin: 0;
     padding: 0;
-    max-width: 100%; /* Establece un ancho máximo */
-    margin: 0 auto; /* Centra el contenido horizontalmente */    
+    max-width: 100%; 
+    margin: 0 auto; 
 }
 
 header {
@@ -38,16 +38,16 @@ header {
 }
 
 .chamber-title {
-    font-size: 18px; /* Tamaño de fuente más pequeño */
-    margin-top: 20px; /* Separación superior del menú */
-    margin-bottom: 10px; /* Separación inferior del menú */
+    font-size: 18px; 
+    margin-top: 20px; 
+    margin-bottom: 10px; 
     margin: 10px 50px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    padding: 10px; /* Ajusta el espacio alrededor del contenedor */
+    padding: 10px; 
 }
 
 .logo {
@@ -55,7 +55,7 @@ header {
 }
 
 .logo img {
-    max-width: 150px; /* Ajusta este valor según lo que necesites */
+    max-width: 150px; 
     height: auto;
 }
 
@@ -71,13 +71,13 @@ header {
 }
 
 .social-icon {
-    width: 50px; /* Tamaño más pequeño para los iconos */
-    height: 50px; /* Tamaño más pequeño para los iconos */
-    margin: 20px; /* Ajusta el margen entre los iconos */
+    width: 50px; 
+    height: 50px; 
+    margin: 20px; 
 }
 
 .info {
-    margin-top: 20px; /* Espacio entre los iconos y la información */
+    margin-top: 20px; 
 }
 
 nav {
@@ -102,7 +102,7 @@ nav ul li a {
 }
 
 nav ul li:last-child {
-    margin-right: auto; /* Elimina el margen derecho del último elemento del menú */
+    margin-right: auto; 
 }
 
 nav ul li a {
@@ -138,16 +138,16 @@ nav ul li a {
 }
 
 .join-link {
-    background-color: rgba(238, 239, 245, 0.758); /* Fondo semitransparente */
-    color: #333; /* Color del texto */
+    background-color: rgba(238, 239, 245, 0.758); 
+    color: #333; 
     padding: 10px 20px;
     text-decoration: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Transición suave */
+    transition: background-color 0.3s ease; 
 }
 
 .join-link:hover {
-    background-color: rgba(250, 8, 8, 0.8); /* Cambio de color al pasar el cursor */
+    background-color: rgba(250, 8, 8, 0.8); 
     font-size: larger;
     color: #fff;
 }
@@ -162,25 +162,25 @@ footer {
 
 .contact-info,
 .dev-info {
-    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+    margin-bottom: 20px; 
 }
 
 .event-container {
     display: flex;
-    justify-content: space-around; /* Espaciado entre los eventos */
-    flex-wrap: wrap; /* Permitir envoltura en pantallas pequeñas */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
 }
 
 .event {
-    width: calc(50% - 20px); /* Ajustar el ancho según sea necesario */
-    margin: 0 10px 20px 10px; /* Margen */
+    width: calc(50% - 20px); 
+    margin: 0 10px 20px 10px; 
     background-color: #f0f0f0;
     padding: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    display: flex; /* Usa flexbox para alinear elementos verticalmente */
-    flex-direction: column; /* Alinea los elementos verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .event-title {
@@ -188,61 +188,58 @@ footer {
 }
 
 .image-container {
-    text-align: center; /* Centrar la imagen */
+    text-align: center;
 }
 
 .image-container img {
-    max-width: 100%; /* Ajustar la imagen al contenedor */
+    max-width: 100%; 
     height: auto;
 }
 
-/* Para dar colores diferentes a cada evento */
-
-
 .event img {
-    max-width: 100%; /* La imagen no será más ancha que su contenedor */
-    height: auto; /* Mantener la proporción de aspecto */
-    max-height: 150px; /* Establecer una altura máxima para las imágenes */
+    max-width: 100%; 
+    height: auto; 
+    max-height: 150px; 
 }
 
 .current-events {
     width: 100%;
-    text-align: center; /* Centrar el texto horizontalmente */
+    text-align: center; 
 }
 
 .event-weather-container {
-    border: 2px solid #ccc; /* Borde de 2 píxeles sólido gris claro */
-    border-radius: 5px; /* Bordes redondeados */
-    background-color: #f9f9f9; /* Fondo gris claro */
-    padding: 20px; /* Espaciado interno */
-    margin-top: 20px; /* Margen superior para separarlo del contenido anterior */
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    margin-top: 20px; 
 }
 
 .events {
-    flex: 1; /* Hace que ocupe el espacio disponible */
-    margin-right: 10px; /* Añade un margen derecho */
+    flex: 1; 
+    margin-right: 10px; 
 }
 
 .weather,
 .spotlights {
-    flex-basis: calc(50% - 10px); /* Divide el espacio en dos */
-    margin-left: 10px; /* Añade un margen izquierdo */
+    flex-basis: calc(50% - 10px); 
+    margin-left: 10px; 
 }
 
 .weather,
 .spotlights {
   
-    padding: 10px; /* Añade relleno */
-    border-radius: 5px; /* Añade bordes redondeados */
+    padding: 10px; 
+    border-radius: 5px; 
 }
 
 .spotlight-container {
-    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    display: flex; 
 }
 
 .spotlight {
-    flex: 1; /* Hace que ocupe el espacio disponible */
-    margin-right: 10px; /* Añade un margen derecho */
+    flex: 1; 
+    margin-right: 10px; 
 }
 
 
@@ -311,7 +308,7 @@ footer {
         display: block;
         position: absolute;
         top: 0;
-        right: 20px; /* Ajusta la posición según sea necesario */
+        right: 20px; 
     }
 
     .hamburger {
@@ -324,9 +321,9 @@ footer {
     .menu {
         display: none;
         position: absolute;
-        top: 50px; /* Ajusta la posición según sea necesario */
+        top: 50px; 
         right: 0;
-        background-color: #f6820d; /* Ajusta el color de fondo según sea necesario */
+        background-color: #f6820d; 
         padding: 20px;
         border-radius: 5px;
     }
@@ -351,15 +348,15 @@ footer {
 
     .event-weather-container {
         display: flex;
-        flex-direction: column; /* Cambia la dirección del contenedor a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     .weather-spotlights-container {
         display: flex;
-        flex-direction: column; /* Cambia la dirección del contenedor a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        width: 100%; /* Agrega espacio entre los elementos */
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
     }
     .event-container {
         flex-direction: column;
@@ -367,8 +364,8 @@ footer {
     }
 
     .event {
-        width: 100%; /* Ajusta el ancho para ocupar todo el espacio disponible */
-        margin: 0 0 20px 0; /* Ajusta el margen para separar los eventos */
+        width: 100%; 
+        margin: 0 0 20px 0; 
     }
     
     .spotlight-container {
@@ -377,8 +374,8 @@ footer {
     }
 
     .spotlight {
-        width: 100%; /* Ajusta el ancho para ocupar todo el espacio disponible */
-        margin: 0 0 20px 0; /* Ajusta el margen para separar los spotlights */
+        width: 100%; 
+        margin: 0 0 20px 0; 
     }
 
 }

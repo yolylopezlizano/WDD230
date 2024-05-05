@@ -37,13 +37,4 @@ function toggleMenu() {
     }
 }
 
-// JavaScript para habilitar el modo oscuro
-document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggleButton = document.getElementById('toggle-dark-mode');
-
-    darkModeToggleButton.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-    });
-});
-
 
