@@ -349,6 +349,38 @@ footer {
         display: none;
     }
 
+    .event-weather-container {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+    
+    .weather-spotlights-container {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        width: 100%; /* Agrega espacio entre los elementos */
+    }
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event {
+        width: 100%; /* Ajusta el ancho para ocupar todo el espacio disponible */
+        margin: 0 0 20px 0; /* Ajusta el margen para separar los eventos */
+    }
+    
+    .spotlight-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotlight {
+        width: 100%; /* Ajusta el ancho para ocupar todo el espacio disponible */
+        margin: 0 0 20px 0; /* Ajusta el margen para separar los spotlights */
+    }
+
 }
 @media (min-width: 769px) {
     .desktop-menu {
