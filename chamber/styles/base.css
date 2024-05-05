@@ -34,22 +34,25 @@ header {
     padding: 10px 20px;
     background-color: #901010;
     color: #fff;
+    flex-direction: row;
+
 }
 
 .chamber-title {
     font-size: 18px; /* Tamaño de fuente más pequeño */
     margin-top: 20px; /* Separación superior del menú */
     margin-bottom: 10px; /* Separación inferior del menú */
+    margin: 10px 50px;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    padding: 10px 700px;
+    padding: 10px 400px;
 }
 
 .logo {
-    margin-right: 20px; /* Ajusta el margen derecho del logo */
+    margin-right: 0px; /* Ajusta el margen derecho del logo */
 }
 
 .logo img {
