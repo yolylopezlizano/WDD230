@@ -8,9 +8,10 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #901010;
     color: #fff;
     padding: 10px 20px;
+    
 }
 
 .logo-container {
@@ -59,20 +60,9 @@ nav ul li a {
 }
 
 .join-link {
-    background-color: #fff;
-    color: #333;
+    background-color: #99aedbda;
+    color: #f9f6f6;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
-@media screen and (min-width: 768px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-    }
-}
-/* Styles for smaller screens (not included in base.css) */

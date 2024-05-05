@@ -5,23 +5,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
-    background-color: #333;
+    text-align: left;
+    background-color: #f8a604;
     color: #fff;
     padding: 10px 20px;
+    
 }
 
 .logo-container {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 .logo {
     flex: 1;
 }
 
+.logo img {
+    max-width: 150px; /* Ajusta este valor según lo que necesites */
+    height: auto;
+}
+
+nav {
+    text-align: left;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -56,20 +67,127 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
 }
 
 .join-link {
-    background-color: #fff;
-    color: #333;
+    background-color: rgba(227, 247, 126, 0.5); /* Fondo semitransparente */
+    color: #333; /* Color del texto */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transición suave */
 }
+
+.join-link:hover {
+    background-color: rgba(250, 8, 8, 0.8); /* Cambio de color al pasar el cursor */
+    font-size: larger;
+    color: #fff;
+}
+
 footer {
-    background-color: #333;
+    background-color: #901010;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 /* Styles for smaller screens (not included in base.css) */
 
+/* base.css */
+/* base.css */
+.event-container {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre los eventos */
+    flex-wrap: wrap; /* Permitir envoltura en pantallas pequeñas */
+}
+
+.event {
+    width: calc(50% - 20px); /* Ajustar el ancho según sea necesario */
+    margin: 0 10px 20px 10px; /* Margen */
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex; /* Usa flexbox para alinear elementos verticalmente */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+.event-title {
+    text-align: center;
+}
+
+.image-container {
+    text-align: center; /* Centrar la imagen */
+}
+
+.image-container img {
+    max-width: 100%; /* Ajustar la imagen al contenedor */
+    height: auto;
+}
+
+/* Para dar colores diferentes a cada evento */
+
+
+.event img {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    max-height: 150px; /* Establecer una altura máxima para las imágenes */
+}
+
+.current-events {
+    width: 100%;
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.event-weather-container {
+    border: 2px solid #ccc; /* Borde de 2 píxeles sólido gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Margen superior para separarlo del contenido anterior */
+}
+
+.events {
+    flex: 1; /* Hace que ocupe el espacio disponible */
+    margin-right: 10px; /* Añade un margen derecho */
+}
+
+.weather,
+.spotlights {
+    flex-basis: calc(50% - 10px); /* Divide el espacio en dos */
+    margin-left: 10px; /* Añade un margen izquierdo */
+}
+
+.weather,
+.spotlights {
+  
+    padding: 10px; /* Añade relleno */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.spotlight-container {
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+}
+
+.spotlight {
+    flex: 1; /* Hace que ocupe el espacio disponible */
+    margin-right: 10px; /* Añade un margen derecho */
+}
+
+
+.weather-spotlights-container {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.weather,
+.spotlights {
+    flex: 0 0 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
