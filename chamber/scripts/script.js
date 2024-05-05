@@ -29,9 +29,20 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Tulsa&aqi=no`)
 })
 
 function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('show-menu');
+    var mobileMenu = document.getElementById("mobileMenu");
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
 }
+  
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggleButton = document.getElementById('toggle-dark-mode');
 
+    darkModeToggleButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+});
 
 

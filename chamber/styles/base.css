@@ -29,9 +29,9 @@ body {
 header {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0px;
     background-color: #901010;
     color: #fff;
     flex-direction: row;
@@ -47,11 +47,11 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    padding: 10px 400px;
+    padding: 10px; /* Ajusta el espacio alrededor del contenedor */
 }
 
 .logo {
-    margin-right: 0px; /* Ajusta el margen derecho del logo */
+    margin-right: auto; 
 }
 
 .logo img {
@@ -164,10 +164,7 @@ footer {
 .dev-info {
     margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
 }
-/* Styles for smaller screens (not included in base.css) */
 
-/* base.css */
-/* base.css */
 .event-container {
     display: flex;
     justify-content: space-around; /* Espaciado entre los eventos */
@@ -273,7 +270,6 @@ footer {
   font-size: 24px;
   cursor: pointer;
 }
-
 
 .desktop-menu {
     display: flex;
