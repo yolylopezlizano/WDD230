@@ -36,6 +36,12 @@ header {
     color: #fff;
 }
 
+.chamber-title {
+    font-size: 18px; /* Tamaño de fuente más pequeño */
+    margin-top: 20px; /* Separación superior del menú */
+    margin-bottom: 10px; /* Separación inferior del menú */
+}
+
 .logo-container {
     display: flex;
     align-items: center;
