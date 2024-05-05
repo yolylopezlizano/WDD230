@@ -83,6 +83,13 @@ nav {
     width: 100%;
 }
 
+
+nav ul li a {
+  text-decoration: none;
+  color: #562407;
+  font-size: 20px;
+}
+
 .menu {
   padding: 20px 0; 
   text-align: center;
