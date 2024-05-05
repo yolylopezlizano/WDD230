@@ -326,7 +326,7 @@ footer {
         position: absolute;
         top: 50px; /* Ajusta la posición según sea necesario */
         right: 0;
-        background-color: #901010; /* Ajusta el color de fondo según sea necesario */
+        background-color: #f6820d; /* Ajusta el color de fondo según sea necesario */
         padding: 20px;
         border-radius: 5px;
     }
@@ -365,4 +365,4 @@ footer {
     .hamburger {
       display: none;
     }  
-  }
+}

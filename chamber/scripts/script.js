@@ -29,14 +29,15 @@ fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Tulsa&aqi=no`)
 })
 
 function toggleMenu() {
-    var mobileMenu = document.getElementById("mobileMenu");
+    var mobileMenu = document.querySelector(".mobile-menu .menu");
     if (mobileMenu.style.display === "block") {
         mobileMenu.style.display = "none";
     } else {
         mobileMenu.style.display = "block";
     }
 }
-  
+
+// JavaScript para habilitar el modo oscuro
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggleButton = document.getElementById('toggle-dark-mode');
 
