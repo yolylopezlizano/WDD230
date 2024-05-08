@@ -9,6 +9,7 @@ img {
     margin: 0;
     padding: 0;
 }
+
 html {
     box-sizing: border-box;
 }
@@ -110,6 +111,7 @@ nav ul li a {
     color: #fff;
     font-size: 20px;
 }
+
 .nav-container {
     background-color: #a69b80;
     width: 100%;
@@ -228,7 +230,6 @@ footer {
 
 .weather,
 .spotlights {
-  
     padding: 10px; 
     border-radius: 5px; 
 }
@@ -241,7 +242,6 @@ footer {
     flex: 1; 
     margin-right: 10px; 
 }
-
 
 .weather-spotlights-container {
     display: flex; 
@@ -264,8 +264,8 @@ footer {
 }
 
 .hamburger {
-  font-size: 24px;
-  cursor: pointer;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .desktop-menu {
@@ -299,6 +299,7 @@ footer {
 .desktop-menu .menu li a:hover {
     background-color: #e9c19a;
 }
+
 .mobile-menu {
     display: none;
 }
@@ -379,19 +380,31 @@ footer {
     }
 
 }
+
 @media (min-width: 769px) {
     .desktop-menu {
-      display: block;
+        display: block;
     }
-  
+
     .menu {
-      display: block;
+        display: block;
     }
-  
+
     .mobile-menu {
-      display: flex;
+        display: flex;
     }
     .hamburger {
-      display: none;
+        display: none;
     }  
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
