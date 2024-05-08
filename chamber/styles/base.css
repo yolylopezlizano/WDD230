@@ -21,10 +21,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1;
-    margin: 0;
-    padding: 0;
-    max-width: 100%; 
-    margin: 0 auto; 
+    margin: 0 auto; /* Corregido */
+    max-width: 100%; /* Removido el duplicado */
 }
 
 header {
@@ -32,7 +30,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px 0; /* Corregido */
     background-color: #901010;
     color: #fff;
     flex-direction: row;
@@ -40,9 +38,7 @@ header {
 
 .chamber-title {
     font-size: 18px; 
-    margin-top: 20px; 
-    margin-bottom: 10px; 
-    margin: 10px 50px;
+    margin: 10px 50px; /* Corregido */
 }
 
 .logo-container {
@@ -143,7 +139,7 @@ nav ul li a {
     background-color: rgba(238, 239, 245, 0.758); 
     color: #333; 
     padding: 10px 20px;
-    text-decoration: bold;
+    font-weight: bold; /* Corregido */
     border-radius: 5px;
     transition: background-color 0.3s ease; 
 }
