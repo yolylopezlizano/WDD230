@@ -378,11 +378,17 @@ footer {
     }
     .my-grid-container {
         display: flex;
-        flex-direction: column; /* Organiza los elementos en columnas */
+        flex-direction: column; /* Organiza los elementos en una sola columna */
+    }
+
+    .info-column,
+    .photos-column {
+        width: 100%; /* Ocupa todo el ancho disponible */
     }
 
     .info-box {
         width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre cada caja de información */
     }
 
     .photos-column {
