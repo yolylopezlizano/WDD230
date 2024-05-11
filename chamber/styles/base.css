@@ -377,7 +377,16 @@ footer {
         margin: 0 0 20px 0; 
     }
     .my-grid-container {
-        display: block;
+        display: flex;
+        flex-direction: column; /* Organiza los elementos en columnas */
+    }
+
+    .info-box {
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .photos-column {
+        margin-top: 20px; /* Espacio entre las cajas de información y las imágenes */
     }
     .photo img {
         opacity: 1; /* Restablecer la opacidad */
