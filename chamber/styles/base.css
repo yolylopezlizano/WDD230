@@ -377,8 +377,7 @@ footer {
         margin: 0 0 20px 0; 
     }
     .my-grid-container {
-        display: flex;
-        flex-direction: column; /* Organiza los elementos en una sola columna */
+        grid-template-columns: 1fr; /* Organiza los elementos en una sola columna */
     }
 
     .info-column,
@@ -397,7 +396,18 @@ footer {
     .photo img {
         opacity: 1; /* Restablecer la opacidad */
         transition: none; /* Anular la transición */
-    }   
+    }
+    .lazy-image {
+        opacity: 1;
+    }
+    
+    
+    .photo:hover img,
+    .photo:hover p {
+     /* Estilos de la imagen y el subtítulo cuando se hace hover sobre la clase .photo */
+        transform: scale(1.1); /* Aumenta el tamaño */
+        transition: transform 0.5s ease; /* Transición suave */
+    }
 }
 
 .hidden {
@@ -477,12 +487,6 @@ footer {
 }
   
 
-.photo:hover img,
-.photo:hover p {
-     /* Estilos de la imagen y el subtítulo cuando se hace hover sobre la clase .photo */
-    transform: scale(1.1); /* Aumenta el tamaño */
-    transition: transform 0.5s ease; /* Transición suave */
-}
 .photo p{
     /* Estilos del subtítulo */
     font-size: 20px;
