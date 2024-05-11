@@ -377,37 +377,72 @@ footer {
         margin: 0 0 20px 0; 
     }
     .my-grid-container {
-        grid-template-columns: 1fr; /* Organiza los elementos en una sola columna */
+        grid-template-columns: 1fr; 
+    }
+}
+    @media (min-width: 769px) {
+    .my-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        position: relative;
     }
 
     .info-column,
     .photos-column {
-        width: 100%; /* Ocupa todo el ancho disponible */
+        width: 100%;
     }
 
     .info-box {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin-bottom: 20px; /* Espacio entre cada caja de información */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .photos-column {
-        margin-top: 20px; /* Espacio entre las cajas de información y las imágenes */
+        margin-top: 20px; 
     }
     .photo img {
-        opacity: 1; /* Restablecer la opacidad */
-        transition: none; /* Anular la transición */
+        opacity: 1; 
+        transition: none; 
     }
     .lazy-image {
-        opacity: 1;
+        display: block; 
+        
     }
-    
+    .lazy-image.first {
+        opacity: 0;
+        transition: opacity 2s ease;
+    }
     
     .photo:hover img,
     .photo:hover p {
-     /* Estilos de la imagen y el subtítulo cuando se hace hover sobre la clase .photo */
-        transform: scale(1.1); /* Aumenta el tamaño */
-        transition: transform 0.5s ease; /* Transición suave */
+        transform: scale(1.1); 
+        transition: transform 1s ease;
+        transform: rotate(-5deg)
     }
+
+    .photo img {
+        max-width: 100%; 
+        height: auto;
+        margin-top: 10%;
+        opacity: 1;
+        transition: opacity 5s ease; 
+      }
+      .photo img.hidden {
+        opacity: 0; 
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+      }
+    .photo img.hidden {
+        opacity: 0;
+      }
 }
 
 .hidden {
@@ -420,15 +455,6 @@ footer {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-
-.my-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    position: relative;
-}
-
-
 
 .info-box {
     padding: 20px;
@@ -450,7 +476,6 @@ footer {
     margin-left: auto; 
     margin-right: auto;
 }
-
 
 .hidden {
     position: absolute;
@@ -488,38 +513,13 @@ footer {
   
 
 .photo p{
-    /* Estilos del subtítulo */
     font-size: 20px;
     color: #9c0a0a;
     text-align: center;
-    /* Agregar sombreado */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreado con desplazamiento X de 2px, desplazamiento Y de 2px, difuminado de 4px y opacidad del 50% */
-    padding: 5px; /* Añadir espacio interno para que el sombreado no se superponga con el texto */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding: 5px; 
 }
-  
-.photo img {
-    max-width: 100%; 
-    height: auto;
-    margin-top: 10%;
-    opacity: 1;
-    transition: opacity 5s ease; 
-  }
-  .photo img.hidden {
-    opacity: 0; /* Cambia la opacidad a 0 cuando están fuera de la vista */
-}
-  
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-  }
-.photo img.hidden {
-    opacity: 0;
-  }
-  
+
 #calendar-image {
     width: 500px;
     height: auto;
@@ -541,45 +541,33 @@ footer {
   }
   
 .sidebar-content {
-     /* Estilos generales del sidebar */
-    margin-top: 20px; /* Espacio superior */
-    padding: 10px; /* Espaciado interno */
-    background-color: #ee6e05; /* Color de fondo */
-    border: 1px solid #ccc; /* Borde */
-    text-align: center; /* Centrar horizontalmente el texto */
-    font-size: 24px; /* Tamaño de letra grande */
+    margin-top: 20px; 
+    padding: 10px;
+    background-color: #ee6e05; 
+    border: 1px solid #ccc; 
+    text-align: center; 
+    font-size: 24px; 
     color: #1a1a1a;
   }
   
 .sidebar-message-box {
-    font-size: 24px; /* Tamaño de letra grande */
-    text-align: center; /* Centrar horizontalmente el texto */
-    margin-top: 10px; /* Espacio superior */
-    padding: 10px; /* Espaciado interno */
-    background-color: #f0f0f0; /* Color de fondo */
-    border: 1px solid #ccc; /* Borde */
+    font-size: 24px; 
+    text-align: center; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
   }
 
-
 #calendar-container {
-    width: 100%; /* Ajusta el ancho según sea necesario */
-    height: 300px; /* Establece la altura deseada para el calendario */
-    border: 1px solid #ccc; /* Agrega un borde para mayor claridad */
-    /* Otros estilos según tu diseño */
+    width: 100%; 
+    height: 300px; 
+    border: 1px solid #ccc; 
 }
 .info-box {
-    /* Estilos generales de tu info box */
-    line-height: 1.5; /* Ajusta el espaciado entre líneas según tu preferencia */
+    line-height: 1.5; 
 }
 
 .info-box ul {
-    list-style-type: none; /* Elimina las viñetas de la lista */
-}
-.lazy-image {
-    opacity: 0;
-    transition: opacity 0.5s ease; /* Transición de opacidad gradual */
-}
-.lazy-image.first {
-    opacity: 0;
-    transition: opacity 2s ease; /* Transición de opacidad gradual */
+    list-style-type: none; 
 }

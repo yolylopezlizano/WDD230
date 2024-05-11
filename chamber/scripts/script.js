@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Actualizar la fecha de última modificación
+    // LastModified
     var lastModifiedSpan = document.getElementById("lastModified");
     var lastModified = new Date(document.lastModified);
     lastModifiedSpan.textContent = lastModified.toLocaleString();
@@ -7,23 +7,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const apiKey = '589eb38416d3410ba6d212507240405';
 
-// Hace una solicitud a la API de clima
+//Weather
 fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=Tulsa&aqi=no`)
     .then(response => response.json())
     .then(data => {
-        // Extrae la información relevante del clima
         const temperature = data.current.temp_f;
         const weatherDescription = data.current.condition.text;
-        const weatherIconUrl = data.current.condition.icon; // Suponiendo que la API proporciona un enlace directo al icono del clima
+        const weatherIconUrl = data.current.condition.icon; 
 
-        // Actualiza el contenido de la sección de clima en tu página web
         const temperatureElement = document.querySelector('.temperature');
         const descriptionElement = document.querySelector('.description');
         const weatherIconElement = document.querySelector('.weather-icon');
         
         temperatureElement.textContent = temperature;
         descriptionElement.textContent = weatherDescription;
-        weatherIconElement.src = weatherIconUrl; // Establece el enlace directo al icono del clima como la fuente de la imagen
+        weatherIconElement.src = weatherIconUrl;
     });
 
 function toggleMenu() {
@@ -34,7 +32,7 @@ function toggleMenu() {
         mobileMenu.style.display = "block";
     }
 }
-
+//Calendar
 document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -42,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     calendar.render();
 });
-
+//Lazyfunction
 document.addEventListener("DOMContentLoaded", function() {
     const lazyImages = document.querySelectorAll(".lazy-image");
 
@@ -52,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const windowHeight = window.innerHeight || document.documentElement.clientHeight;
             const threshold = rect.height * 0.2; 
             if (rect.top <= windowHeight && rect.bottom >= threshold) {
-                img.style.opacity = 1; // Cambia la opacidad gradualmente a 1
+                img.style.opacity = 1; 
             } else {
-                img.style.opacity = 0; // Oculta la imagen si no está visible
+                img.style.opacity = 0;
             }
         });
     }
@@ -62,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeInImages();
     window.addEventListener("scroll", fadeInImages);
 });
-
+//Sidebar
 document.addEventListener("DOMContentLoaded", function() {
     var lastVisit = localStorage.getItem("lastVisit");
     console.log("Last visit:", lastVisit); 
