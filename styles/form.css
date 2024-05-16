@@ -1,0 +1,73 @@
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-font-family: Arial, sans-serif;
+    --main-text-color: #333;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background-color: #fff;
+    color: var(--main-text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, footer {
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus, button:focus {
+    outline: none;
+    border-color: #0066cc;
+}
+
+button {
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#ratingValue {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
