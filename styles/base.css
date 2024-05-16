@@ -257,6 +257,7 @@ footer img {
 
 .activity-information-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 100%;
   margin: 30px auto 0;
@@ -276,6 +277,7 @@ footer img {
   padding: 20px;
   text-align: center;
   font-size: 1.2em;
+  flex-basis: calc(50% - 20px);
 }
 
 .information {
@@ -284,6 +286,7 @@ footer img {
   text-align: center;
   font-size: 1.2em;
   color: #562407;
+  flex-basis: calc(50% - 20px);
 }
 
 .activity h2,
@@ -338,19 +341,28 @@ footer img {
 }
 
 .submenu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #9c500d;
+  background-color: #f8e8ca;
   border: 1px solid #ccc;
   padding: 10px;
   z-index: 1;
   color: #333;
+  width: 100%; 
+  display: none; 
+}
+
+.submenu-trigger {
+  position: relative; 
 }
 
 .submenu-trigger:hover .submenu {
   display: block;
+}
+
+.submenu li {
+  margin-bottom: 10px; /* Espaciado entre elementos del menú desplegable */
 }
 
 .menu li {
