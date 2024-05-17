@@ -11,13 +11,39 @@
 <body>
 
 <header>
-    <h1>Form Activity</h1>
-</header>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="header-info">
+                <img src="images/photo2.jpg" alt="Yolanda Lizano" width="75" height="100">
+            </div>
+            <span class="name">Yolanda Lizano</span>
+        </div>
+        <nav class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span class="close-btn" onclick="toggleMenu()">✕</span>
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="https://codepen.io/blazzard-jason/pen/bGKLQMp">CodePen</a></li>
+                    <li><a href="form.html">Form Activity</a></li>
+                </ul>
+            </div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+            <div class="desktop-menu">
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="https://codepen.io/blazzard-jason/pen/bGKLQMp">CodePen</a></li>
+                    <li><a href="form.html">Form Activity</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
 </nav>
 
 <main>
@@ -44,10 +70,15 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Yolanda Lizano Form Page.</p>
+    <p>
+        &copy; <span id="currentYear"></span> Yolanda Lizano, <img src="images/OklahomaFlag.jpg" alt="OKFlag" class="flag" width="70" height="50"> Oklahoma
+    </p>
+    <p>Last Modified: <span id="lastModifiedFooter"></span></p>
+    <a href="https://www.facebook.com/emilylopez2011/" target="_blank"><img src="images/facebook_logos_PNG19750.png" alt="Facebook" width="30" height="30"></a>
 </footer>
 
 <script src="scripts/form.js"></script>
+<script src="scripts/getDates.js"></script>
 
 </body>
 </html>

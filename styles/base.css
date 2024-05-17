@@ -300,15 +300,6 @@ footer img {
   font-size: 22px;
 }
 
-.close-btn {
-  display: none;
-}
-
-.hamburger {
-  font-size: 24px;
-  cursor: pointer;
-}
-
 .desktop-menu {
   display: flex;
 }
