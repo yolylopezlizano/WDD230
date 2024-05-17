@@ -94,7 +94,23 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem("lastVisit", currentTime.toString()); 
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    // LastModified
+    var lastModifiedSpan = document.getElementById("lastModified");
+    var lastModified = new Date(document.lastModified);
+    lastModifiedSpan.textContent = lastModified.toLocaleString();
 
+    // Timestamp for form
+    var timestampInput = document.getElementById("timestamp");
+    var currentDateTime = new Date();
+    timestampInput.value = currentDateTime.toISOString();
+});
+
+// Element timestamp
+var timestampField = document.getElementById("timestamp");
+var currentDate = new Date();
+var formattedDate = currentDate.toLocaleString();
+timestampField.value = formattedDate;
       
     
     
