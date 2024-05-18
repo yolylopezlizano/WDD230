@@ -106,12 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
     timestampInput.value = currentDateTime.toISOString();
 });
 
-// Element timestamp
-var timestampField = document.getElementById("timestamp");
-var currentDate = new Date();
-var formattedDate = currentDate.toLocaleString();
-timestampField.value = formattedDate;
-      
+     
     
     
    
