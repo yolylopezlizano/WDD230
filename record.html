@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Confirmation</title>
-    <link rel="stylesheet" href="styles/form.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Lab Form Validation - Yolanda Lizano</title>
+        <meta name="description" content="Fill out this form for user validation and feedback on the WDD 230 - Web Frontend Development course by Yolanda Lizano. Ensure all fields are completed correctly.">
+        <meta name="author" content="Yolanda Lizano">
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+
 <body>
 
-    <header>
-        <h1>Form Submission Confirmation</h1>
-    </header>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="header-info">
+                <img src="images/photo2.jpg" alt="Yolanda Lizano" width="75" height="100">
+            </div>
+            <span class="name">Yolanda Lizano</span>
+        </div>
+        <nav class="nav-container">
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+                <span class="close-btn" onclick="toggleMenu()"></span>
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="https://codepen.io/blazzard-jason/pen/bGKLQMp">CodePen</a></li>
+                    <li><a href="form.html">Form Activity</a></li>
+                </ul>
+            </div>
 
-    <nav>
-        <a href="index.html">Return Home Page</a>
-    </nav>
+            <div class="desktop-menu">
+                <ul class="menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
+                    <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="https://codepen.io/blazzard-jason/pen/bGKLQMp">CodePen</a></li>
+                    <li><a href="form.html">Form Activity</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </header>
+    
 
     <main>
         <h2>Thank you for your submission!</h2>
@@ -22,8 +52,16 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Yolanda Lizano Home Page.</p>
+        <p>
+            &copy; <span id="currentYear"></span> Yolanda Lizano, <img src="images/OklahomaFlag.jpg" alt="OKFlag" class="flag" width="70" height="50"> Oklahoma
+        </p>
+        <p>Last Modified: <span id="lastModifiedFooter"></span></p>
+        <a href="https://www.facebook.com/emilylopez2011/" target="_blank"><img src="images/facebook_logos_PNG19750.png" alt="Facebook" width="30" height="30"></a>
     </footer>
+        
+        <script src="scripts/form.js"></script>
+        <script src="scripts/getDates.js"></script>
+
 
 </body>
 </html>
