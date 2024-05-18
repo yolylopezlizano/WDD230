@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastModifiedSpan = document.getElementById("lastModified");
     var lastModified = new Date(document.lastModified);
     lastModifiedSpan.textContent = lastModified.toLocaleString();
+
+    // Timestamp for form
+    var timestampInput = document.getElementById("timestamp");
+    var currentDateTime = new Date();
+    timestampInput.value = currentDateTime.toISOString();
 });
 
 const apiKey = '589eb38416d3410ba6d212507240405';
@@ -94,17 +99,6 @@ document.addEventListener("DOMContentLoaded", function() {
     localStorage.setItem("lastVisit", currentTime.toString()); 
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // LastModified
-    var lastModifiedSpan = document.getElementById("lastModified");
-    var lastModified = new Date(document.lastModified);
-    lastModifiedSpan.textContent = lastModified.toLocaleString();
-
-    // Timestamp for form
-    var timestampInput = document.getElementById("timestamp");
-    var currentDateTime = new Date();
-    timestampInput.value = currentDateTime.toISOString();
-});
 
      
     
