@@ -107,7 +107,8 @@
                 <h2 class="card"> Information</h2>
                 <ul>
                     <li>City: Tulsa, Oklahoma</li>
-                    <li>Weather: ☀ Sunny</li>
+                    <li>Weather: <span id="weather-temperature"></span>, <span id="weather-description"></span></li>
+                    <li><img id="weather-icon" src="" alt="Weather Icon"></li>                    
                     <li id="visit-counter">Number of visits: <span id="visit-count">0</span></li>
                 </ul>
             </section>
@@ -126,6 +127,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/visitCounter.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvxRuPrAxlTQweQSSquxhZQfdCP0s6Aj0&callback=initMap&language=en" async defer></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
 
