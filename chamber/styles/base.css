@@ -679,7 +679,7 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Estilos para la vista de tarjetas de miembros */
+/* Style members cards */
 .member-card {
     background-color: #8d030313;
     border: 1px solid #ccc;
@@ -704,25 +704,25 @@ input[type="submit"]:hover {
 }
 
 .member-grid-view .member-card .member-details {
-    display: none; /* Hide text in grid view */
+    display: none; 
 }
 
 /* List view styles */
 .member-list-view .member-card {
-    width: 100%; /* Full width in list view */
+    width: 100%; 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     gap: 10px;
     align-items: center;
     text-align: left;
 }
 
 .member-list-view .member-card img {
-    display: none; /* Hide image in list view */
+    display: none; 
 }
 
 .member-list-view .member-card .member-details {
-    display: contents; /* Make the child elements part of the grid layout */
+    display: contents; 
 }
 
 .member-list-view .member-card .member-name,
@@ -755,39 +755,48 @@ input[type="submit"]:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .member-list-view .member-card {
-        display: block; /* Cambia la visualización a bloque */
-        width: 100%; /* Ocupa todo el ancho disponible */
-        margin-bottom: 20px; /* Añade espacio entre los miembros */
+    .member-list-view .member-card,
+    .member-grid-view .member-card {
+        width: 90%; 
+        align-items: center;
+        margin-left: 22px;
     }
-    .member-list-view {
-        display: block;
-        width: 100%; /* Ajusta el ancho de la imagen al 100% */
-        height: auto; /* Mantén la proporción de la imagen */
-        margin-bottom: 10px; /* Añade espacio entre las imágenes */
+
+    .member-grid-view .member-card {
+        margin-bottom: 20px; 
+    }
+
+    .member-list-view .member-card img {
+        display: none; 
+    }
+
+    .member-list-view .member-card .member-details {
+        display: block; 
         line-height: 1.5;
     }
-}
 
-@media (max-width: 480px) {
-    .member-grid-view .member-card {
-        width: calc(100% - 20px); /* 1 column on very small screens */
+    .member-list-view .member-card {
+        margin: 0 auto; 
     }
+    .member-list-view .member-card .member-name{
+        white-space: nowrap; /
+        overflow: hidden; 
+    }   
 }
 
-/* Estilos para el nuevo contenedor de los botones de vista */
+/* Grid and list view menu*/
 .view-menu {
     display: flex;
-    justify-content: center; /* Centra los botones */
+    justify-content: center; 
     align-items: center;
-    margin: 20px 0; /* Añade espacio alrededor de los botones */
+    margin: 20px 0; 
 }
 
 .view-menu button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10px; /* Espacio entre los botones */
+    margin: 0 10px; 
     padding: 10px 20px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -798,13 +807,10 @@ input[type="submit"]:hover {
 }
 
 .view-menu button i {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+    margin-right: 8px;
 }
 
 .view-menu button:hover {
     background-color: #ddd;
 }
-
-
-
 

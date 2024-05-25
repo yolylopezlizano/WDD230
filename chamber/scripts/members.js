@@ -4,10 +4,8 @@ async function fetchAndDisplayMembers() {
         const data = await response.json();
         const membersContainer = document.getElementById('members-container');
 
-        // Clear previous content
         membersContainer.innerHTML = '';
 
-        // Loop through members and create HTML elements
         data.members.forEach(member => {
             const memberCard = document.createElement('div');
             memberCard.classList.add('member-card');
@@ -29,10 +27,6 @@ async function fetchAndDisplayMembers() {
     }
 }
 
-// Initial call to fetch and display members
-fetchAndDisplayMembers();
-
-// Function to toggle between grid and list view
 document.getElementById('grid-view-button').addEventListener('click', function() {
     document.getElementById('members-container').classList.remove('member-list-view');
     document.getElementById('members-container').classList.add('member-grid-view');
@@ -43,19 +37,17 @@ document.getElementById('list-view-button').addEventListener('click', function()
     document.getElementById('members-container').classList.add('member-list-view');
 });
 
-
-// Initial call to fetch and display members
 fetchAndDisplayMembers();
 
-// Function to toggle between grid and list view
-document.getElementById('grid-view-button').addEventListener('click', function() {
-    document.getElementById('members-container').classList.remove('member-list-view');
-    document.getElementById('members-container').classList.add('member-grid-view');
-});
+window.addEventListener('resize', function() {
+    const screenWidth = window.innerWidth;
+    const membersContainer = document.getElementById('members-container');
 
-document.getElementById('list-view-button').addEventListener('click', function() {
-    document.getElementById('members-container').classList.remove('member-grid-view');
-    document.getElementById('members-container').classList.add('member-list-view');
+    if (screenWidth < 768) {
+        membersContainer.classList.add('small-screen');
+    } else {
+        membersContainer.classList.remove('small-screen');
+    }
 });
 
 
