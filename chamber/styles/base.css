@@ -678,3 +678,124 @@ input[type="submit"]:hover {
 .thankyou-container .button:hover {
     background-color: #0056b3;
 }
+
+/* Estilos para la vista de tarjetas de miembros */
+.member-card {
+    background-color: #8d030313;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Grid view styles */
+.member-grid-view .member-card {
+    width: calc(33.33% - 20px); /* 3 columns */
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.member-grid-view .member-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.member-grid-view .member-card .member-details {
+    display: none; /* Hide text in grid view */
+}
+
+/* List view styles */
+.member-list-view .member-card {
+    width: 100%; /* Full width in list view */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns */
+    gap: 10px;
+    align-items: center;
+    text-align: left;
+}
+
+.member-list-view .member-card img {
+    display: none; /* Hide image in list view */
+}
+
+.member-list-view .member-card .member-details {
+    display: contents; /* Make the child elements part of the grid layout */
+}
+
+.member-list-view .member-card .member-name,
+.member-list-view .member-card .member-address,
+.member-list-view .member-card .member-phone,
+.member-list-view .member-card .member-website,
+.member-list-view .member-card .member-membership-level {
+    display: block;
+}
+
+.member-list-view .member-card .member-name {
+    grid-column: 1 / 2;
+}
+
+.member-list-view .member-card .member-address {
+    grid-column: 2 / 3;
+}
+
+.member-list-view .member-card .member-phone {
+    grid-column: 3 / 4;
+}
+
+.member-list-view .member-card .member-website {
+    grid-column: 4 / 5;
+}
+
+.member-list-view .member-card .member-membership-level {
+    grid-column: 5 / 6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .member-grid-view .member-card {
+        width: calc(50% - 20px); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .member-grid-view .member-card {
+        width: calc(100% - 20px); /* 1 column on very small screens */
+    }
+}
+
+/* Estilos para el nuevo contenedor de los botones de vista */
+.view-menu {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    margin: 20px 0; /* Añade espacio alrededor de los botones */
+}
+
+.view-menu button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Espacio entre los botones */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-menu button i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.view-menu button:hover {
+    background-color: #ddd;
+}
+
+
+
+
