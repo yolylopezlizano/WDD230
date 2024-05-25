@@ -1,0 +1,63 @@
+{
+    "members": [
+      {
+        "name": "Tulsa Crafts",
+        "address": "123 Street, Tulsa, Ok",
+        "phone": "123-456-7890",
+        "website": "http://www.company1.com",
+        "image": "../images/Business1",
+        "membership_level": "Gold",
+        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "name": "Green Garden",
+        "address": "456 Street, Tulsa, Ok",
+        "phone": "987-654-3210",
+        "website": "http://www.company2.com",
+        "image": "../images/Business2",
+        "membership_level": "Silver",
+        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "name": "Broken Arrow Agency",
+        "address": "789 Road, Village, Broken Arrow, Ok",
+        "phone": "555-555-5555",
+        "website": "http://www.company3.com",
+        "image": "../images/Business3",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "My Palet of colors",
+        "address": "25353 S, Village, Tulsa, Ok",
+        "phone": "555-555-5555",
+        "website": "http://www.company4.com",
+        "image": "../images/Business4",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "Museum of Military History ",
+        "address": "842 St, Village, Tulsa, Ok",
+        "phone": "555-555-5555",
+        "website": "http://www.company5.com",
+        "image": "../images/Business5",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "You can do it",
+        "address": "789 St, Village, Tulsa, Ok",
+        "phone": "555-555-5555",
+        "website": "http://www.company6.com",
+        "image": "../images/Business6",
+        "membership_level": "Bronze"
+      },
+      {
+        "name": "Imaginary Market",
+        "address": "789 Road, Tulsa, Ok",
+        "phone": "555-555-5555",
+        "website": "http://www.company7.com",
+        "image": "../images/Business7",
+        "membership_level": "Bronze"
+      }
+    ]
+}
+  
