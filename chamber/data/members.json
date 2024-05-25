@@ -5,7 +5,7 @@
         "address": "123 Street, Tulsa, Ok",
         "phone": "123-456-7890",
         "website": "http://www.company1.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business1.png",
+        "image": "https://drive.google.com/file/d/1hTNup3BvBaLyy4WHIl0quecs6K3Z4_IB/view?usp=sharing",
         "membership_level": "Gold",
         "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       },
@@ -14,7 +14,7 @@
         "address": "456 Street, Tulsa, Ok",
         "phone": "987-654-3210",
         "website": "http://www.company2.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business2.png",
+        "image": "https://drive.google.com/file/d/1xstfKNLwNF8onUx9GEtc16IExOoNHcAX/view?usp=sharing",
         "membership_level": "Silver",
         "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
@@ -23,7 +23,7 @@
         "address": "789 Road, Village, Broken Arrow, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company3.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business3.png",
+        "image": "https://drive.google.com/file/d/1NuSKtf_Y7pw81H_0V8Irfs_hdjjlxlPA/view?usp=sharing",
         "membership_level": "Bronze"
       },
       {
@@ -31,7 +31,7 @@
         "address": "25353 S, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company4.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business4.png",
+        "image": "https://drive.google.com/file/d/1gRqC6uDRuo60ROqSEWZmwNJ0Su7GaLzu/view?usp=sharing",
         "membership_level": "Bronze"
       },
       {
@@ -39,7 +39,7 @@
         "address": "842 St, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company5.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business5.png",
+        "image": "https://drive.google.com/file/d/1cuQ1-orxu4xR8o7iM7WB-dV9DfdtRxhX/view?usp=sharing",
         "membership_level": "Bronze"
       },
       {
@@ -47,7 +47,7 @@
         "address": "789 St, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company6.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business6.png",
+        "image": "https://drive.google.com/file/d/1gRqC6uDRuo60ROqSEWZmwNJ0Su7GaLzu/view?usp=sharing",
         "membership_level": "Bronze"
       },
       {
@@ -55,7 +55,7 @@
         "address": "789 Road, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company7.com",
-        "image": "https://github.com/yolylopezlizano/wdd230/blob/main/chamber/images/Business7.png",
+        "image": "https://drive.google.com/file/d/1SCnfx7yx-81XnHvX-PUIHsXsm2sOpgiX/view?usp=sharing",
         "membership_level": "Bronze"
       }
     ]
