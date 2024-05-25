@@ -5,7 +5,7 @@
         "address": "123 Street, Tulsa, Ok",
         "phone": "123-456-7890",
         "website": "http://www.company1.com",
-        "image": "https://images.search.yahoo.com/search/images?p=imagen+museo+milita&fr=mcafee&type=E210US0G0&imgurl=https%3A%2F%2Fwww.mipaisitosv.com%2Fwp-content%2Fuploads%2F2021%2F05%2F50E101A0-EC7F-4E5D-A29A-315AD53A64D1-scaled.jpeg#id=0&iurl=https%3A%2F%2Fwww.mipaisitosv.com%2Fwp-content%2Fuploads%2F2021%2F05%2F50E101A0-EC7F-4E5D-A29A-315AD53A64D1-scaled.jpeg&action=click",
+        "image": "images/company1",
         "membership_level": "Gold"
       },
       {
@@ -13,7 +13,7 @@
         "address": "456 Street, Tulsa, Ok",
         "phone": "987-654-3210",
         "website": "http://www.company2.com",
-        "image": "https://drive.google.com/file/d/1xstfKNLwNF8onUx9GEtc16IExOoNHcAX/view?usp=sharing",
+        "image": "images/company2",
         "membership_level": "Silver"
       },
       {
@@ -21,7 +21,7 @@
         "address": "789 Road, Village, Broken Arrow, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company3.com",
-        "image": "https://drive.google.com/file/d/1NuSKtf_Y7pw81H_0V8Irfs_hdjjlxlPA/view?usp=sharing",
+        "image": "images/company3",
         "membership_level": "Bronze"
       },
       {
@@ -29,7 +29,7 @@
         "address": "25353 S, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company4.com",
-        "image": "https://drive.google.com/file/d/1gRqC6uDRuo60ROqSEWZmwNJ0Su7GaLzu/view?usp=sharing",
+        "image": "images/company4",
         "membership_level": "Bronze"
       },
       {
@@ -37,7 +37,7 @@
         "address": "842 St, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company5.com",
-        "image": "https://drive.google.com/file/d/1cuQ1-orxu4xR8o7iM7WB-dV9DfdtRxhX/view?usp=sharing",
+        "image": "images/company5",
         "membership_level": "Bronze"
       },
       {
@@ -45,7 +45,7 @@
         "address": "789 St, Village, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company6.com",
-        "image": "https://drive.google.com/file/d/1gRqC6uDRuo60ROqSEWZmwNJ0Su7GaLzu/view?usp=sharing",
+        "image": "images/company6",
         "membership_level": "Bronze"
       },
       {
@@ -53,7 +53,7 @@
         "address": "789 Road, Tulsa, Ok",
         "phone": "555-555-5555",
         "website": "http://www.company7.com",
-        "image": "https://drive.google.com/file/d/1SCnfx7yx-81XnHvX-PUIHsXsm2sOpgiX/view?usp=sharing",
+        "image": "images/company7",
         "membership_level": "Bronze"
       }
     ]

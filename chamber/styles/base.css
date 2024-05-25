@@ -755,8 +755,17 @@ input[type="submit"]:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .member-grid-view .member-card {
-        width: calc(50% - 20px); /* 2 columns on smaller screens */
+    .member-list-view .member-card {
+        display: block; /* Cambia la visualización a bloque */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Añade espacio entre los miembros */
+    }
+    .member-list-view {
+        display: block;
+        width: 100%; /* Ajusta el ancho de la imagen al 100% */
+        height: auto; /* Mantén la proporción de la imagen */
+        margin-bottom: 10px; /* Añade espacio entre las imágenes */
+        line-height: 1.5;
     }
 }
 
