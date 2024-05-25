@@ -6,8 +6,7 @@
         "phone": "123-456-7890",
         "website": "http://www.company1.com",
         "image": "https://drive.google.com/file/d/1hTNup3BvBaLyy4WHIl0quecs6K3Z4_IB/view?usp=sharing",
-        "membership_level": "Gold",
-        "other_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "membership_level": "Gold"
       },
       {
         "name": "Green Garden",
@@ -15,8 +14,7 @@
         "phone": "987-654-3210",
         "website": "http://www.company2.com",
         "image": "https://drive.google.com/file/d/1xstfKNLwNF8onUx9GEtc16IExOoNHcAX/view?usp=sharing",
-        "membership_level": "Silver",
-        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "membership_level": "Silver"
       },
       {
         "name": "Broken Arrow Agency",
