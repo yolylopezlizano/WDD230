@@ -468,17 +468,6 @@ footer {
     opacity: 0;
   }
 
-.hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
 .lazy-image {
     display: block; 
     
@@ -779,7 +768,7 @@ input[type="submit"]:hover {
         margin: 0 auto; 
     }
     .member-list-view .member-card .member-name{
-        white-space: nowrap; /
+        white-space: nowrap;
         overflow: hidden; 
     }   
 }
