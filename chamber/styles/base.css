@@ -102,12 +102,6 @@ nav ul li:last-child {
     margin-right: auto; 
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
 .nav-container {
     background-color: #a69b80;
     width: 100%;
@@ -220,25 +214,6 @@ footer {
     margin-right: 10px; 
 }
 
-.weather,
-.spotlights {
-    flex-basis: calc(50% - 10px); 
-}
-
-.weather,
-.spotlights {
-    padding: 10px; 
-    border-radius: 5px; 
-}
-
-.spotlight-container {
-    display: flex; 
-}
-
-.spotlight {
-    flex: 1; 
-}
-
 .weather-spotlights-container {
     display: flex; 
     justify-content: space-between; 
@@ -317,23 +292,24 @@ footer {
     text-align: center; /* Centra horizontalmente el texto */
 }
 
-.spotlights h2 {
-    margin-bottom: 20px; /* Ajusta el espacio entre el título y los elementos internos */
-}
-
-.spotlight-container {
+.spotlights-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around; /* Para distribuir uniformemente las imágenes */
+    align-items: center; /* Para alinear verticalmente las imágenes */
+    margin-top: 20px; /* Espacio superior */
 }
 
-.spotlight-container .spotlight {
-    margin-bottom: 20px; /* Espacio entre las imágenes */
+.spotlight {
+    width: 150px; /* Ancho de cada imagen */
+    height: 150px; /* Altura de cada imagen */
+    margin: 0 10px; /* Espacio horizontal entre imágenes */
 }
 
-.spotlight-container .spotlight img {
-    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    height: auto;
+.spotlight img {
+    width: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible */
+    height: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible */
+    object-fit: cover; /* Para que las imágenes se ajusten al tamaño del contenedor */
+    border-radius: 50%; /* Para hacer que las imágenes sean redondas (opcional) */
 }
 
 .close-btn {
@@ -445,21 +421,6 @@ footer {
         margin: 0 0 20px 0; 
     }
     
-    .spotlight-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .spotlight-container img {
-        max-width: 100%; /* Ajusta el ancho máximo de las imágenes */
-        margin-bottom: 10px; /* Espacio entre cada imagen */
-    }
-    
-    .spotlight {
-        width: 100%; 
-        margin: 0 0 20px 0; 
-    }
     .my-grid-container {
         grid-template-columns: 1fr; 
     }
