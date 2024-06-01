@@ -432,8 +432,14 @@ footer {
     }
     
     .spotlight-container {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .spotlight-container img {
+        max-width: 100%; /* Ajusta el ancho máximo de las imágenes */
+        margin-bottom: 10px; /* Espacio entre cada imagen */
     }
     
     .spotlight {

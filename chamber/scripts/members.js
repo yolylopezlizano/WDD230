@@ -37,8 +37,6 @@ document.getElementById('list-view-button').addEventListener('click', function()
     document.getElementById('members-container').classList.add('member-list-view');
 });
 
-fetchAndDisplayMembers();
-
 window.addEventListener('resize', function() {
     const screenWidth = window.innerWidth;
     const membersContainer = document.getElementById('members-container');
@@ -50,5 +48,38 @@ window.addEventListener('resize', function() {
     }
 });
 
+// Function to shuffle array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
+// Fetch and display member spotlights
+fetchAndDisplayMembers();
 
+// Fetch JSON data for member spotlights
+fetch('https://raw.githubusercontent.com/yolylopezlizano/wdd230/main/chamber/data/members.json')
+    .then(response => response.json())
+    .then(data => {
+        // Filter members with silver or gold membership levels
+        const qualifiedMembers = data.filter(member => member.membership === 'silver' || member.membership === 'gold');
+        
+        // Shuffle array to randomize spotlights
+        const shuffledMembers = shuffleArray(qualifiedMembers);
+        
+        // Select up to two random members for spotlights
+        const spotlightMembers = shuffledMembers.slice(0, 2);
+
+        // Populate spotlight section with selected members
+        const spotlightContainer = document.querySelector('.spotlight-container');
+        spotlightMembers.forEach(member => {
+            const image = document.createElement('img');
+            image.src = member.image;
+            image.alt = member.name;
+            spotlightContainer.appendChild(image);
+        });
+    })
+    .catch(error => console.error('Error fetching members data:', error));
