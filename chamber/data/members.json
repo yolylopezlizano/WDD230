@@ -30,7 +30,7 @@
         "phone": "555-555-5555",
         "website": "http://www.company4.com",
         "image": "images/company4.webp",
-        "membership_level": "Bronze"
+        "membership_level": "Gold"
       },
       {
         "name": "Museum of Military History ",
@@ -38,7 +38,7 @@
         "phone": "555-555-5555",
         "website": "http://www.company5.com",
         "image": "images/company5.webp",
-        "membership_level": "Bronze"
+        "membership_level": "Silver"
       },
       {
         "name": "You can do it",
@@ -54,7 +54,7 @@
         "phone": "555-555-5555",
         "website": "http://www.company7.com",
         "image": "images/company7.webp",
-        "membership_level": "Bronze"
+        "membership_level": "Gold"
       }
     ]
 }

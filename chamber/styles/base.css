@@ -223,7 +223,6 @@ footer {
 .weather,
 .spotlights {
     flex-basis: calc(50% - 10px); 
-    margin-left: 10px; 
 }
 
 .weather,
@@ -238,7 +237,6 @@ footer {
 
 .spotlight {
     flex: 1; 
-    margin-right: 10px; 
 }
 
 .weather-spotlights-container {
@@ -255,6 +253,72 @@ footer {
     background-color: #f9f9f9; 
     padding: 10px; 
     margin-bottom: 20px; 
+}
+
+.weather {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; /* Esto centra horizontalmente */
+    text-align: center; /* Esto centra el texto dentro del contenedor */
+}
+
+.weather h3 {
+    margin-bottom: 10px; /* Ajusta el espacio entre la ciudad y la temperatura */
+    border-bottom: 1px solid #ccc; /* Agrega una línea inferior */
+    padding-bottom: 20px; /* Espacio entre la ciudad y la temperatura */
+}
+.weather li {
+    list-style-type: none; 
+    padding-left: 0; 
+    margin-left: 0;
+    line-height: 1.5;
+}
+
+.weather li:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Esto centra horizontalmente el icono */
+}
+
+.weather li:last-child img {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px; /* Espacio entre la información del clima y el icono */
+}
+
+.weather-forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weather-forecast-item h4 {
+    margin-bottom: 10px;
+}
+
+.weather-forecast-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.weather-forecast-item ul li {
+    margin-bottom: 0px;
+}
+
+.weather-forecast-item img {
+    width: 80px;
+    height: 80px;
+    margin-left: 0px; /* Espacio entre la información del clima y el icono */
+}
+
+.spotlights {
+    text-align: center; /* Centra horizontalmente el texto */
+}
+
+.spotlights h2 {
+    margin-bottom: 20px; /* Ajusta el espacio entre el título y los elementos internos */
 }
 
 .close-btn {
