@@ -669,13 +669,10 @@ input[type="submit"]:hover {
         margin-top: 20px;
     }
 
-    form {
-        margin-right: 0;
-    }
-
     .membership-benefits {
         margin-top: 20px;
     }
+
 }
 
 .thankyou-container {
@@ -914,4 +911,40 @@ input[type="submit"]:hover {
 
 .valid {
     color: green;
+}
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .contact-form-container {
+        text-align: center;
+        margin: 50px auto; 
+        max-width: 400px; 
+    }
+    
+    .contact-form label {
+        display: block;
+        text-align: left; 
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%; 
+        padding: 10px; 
+        margin-bottom: 10px; 
+        box-sizing: border-box; 
+    }
+    
+    .contact-form input[type="submit"] {
+        width: 100%; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+    .required {
+        color: red;
+    }
+    
+    .valid {
+        color: green;
+    }
+
 }
