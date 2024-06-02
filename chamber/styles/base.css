@@ -227,7 +227,6 @@ footer {
     border-radius: 5px; 
     background-color: #f9f9f9; 
     padding: 10px; 
-    margin-bottom: 20px; 
 }
 
 .weather {
@@ -237,7 +236,7 @@ footer {
     text-align: center; /* Esto centra el texto dentro del contenedor */
 }
 
-.weather h3 {
+.weather h2 {
     margin-bottom: 10px; /* Ajusta el espacio entre la ciudad y la temperatura */
     border-bottom: 1px solid #ccc; /* Agrega una línea inferior */
     padding-bottom: 20px; /* Espacio entre la ciudad y la temperatura */
@@ -246,7 +245,7 @@ footer {
     list-style-type: none; 
     padding-left: 0; 
     margin-left: 0;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .weather li:last-child {
@@ -265,27 +264,15 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.weather-forecast-item h4 {
-    margin-bottom: 10px;
 }
 
 .weather-forecast-item ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.weather-forecast-item ul li {
-    margin-bottom: 0px;
 }
 
 .weather-forecast-item img {
     width: 80px;
     height: 80px;
-    margin-left: 0px; /* Espacio entre la información del clima y el icono */
 }
 
 .spotlights {
@@ -294,22 +281,23 @@ footer {
 
 .spotlights-container {
     display: flex;
-    justify-content: space-around; /* Para distribuir uniformemente las imágenes */
-    align-items: center; /* Para alinear verticalmente las imágenes */
-    margin-top: 20px; /* Espacio superior */
+    flex-wrap: wrap;
 }
 
 .spotlight {
-    width: 150px; /* Ancho de cada imagen */
-    height: 150px; /* Altura de cada imagen */
-    margin: 0 10px; /* Espacio horizontal entre imágenes */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center; 
 }
 
 .spotlight img {
-    width: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible */
-    height: 100%; /* Hacer que las imágenes ocupen todo el espacio disponible */
-    object-fit: cover; /* Para que las imágenes se ajusten al tamaño del contenedor */
-    border-radius: 50%; /* Para hacer que las imágenes sean redondas (opcional) */
+    max-width: 80%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin-left: 70px;
 }
 
 .close-btn {
@@ -411,6 +399,11 @@ footer {
         align-items: center; 
         width: 100%; 
     }
+
+    .spotlight img {
+        margin-left: 20px;
+    }
+
     .event-container {
         flex-direction: column;
         align-items: center;
