@@ -1,6 +1,6 @@
 async function fetchWeatherData() {
     const apiKey = 'e7cb0f81db01d92b979b56e2546da889';
-    const city = 'Tulsa'; // or any other city
+    const city = 'Tulsa';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     
     try {
@@ -40,27 +40,25 @@ async function fetchWeatherForecast(city) {
 }
 
 async function updateWeatherForecast() {
-    const city = 'Tulsa'; // o cualquier otra ciudad
+    const city = 'Tulsa'; 
     const forecastData = await fetchWeatherForecast(city);
     
-    // Extraer pronóstico para los próximos tres días
-    const nextThreeDaysForecast = forecastData.list.slice(0, 3); // Suponiendo que cada elemento representa datos para intervalos de 3 horas
+    const nextThreeDaysForecast = forecastData.list.slice(0, 3); 
 
-    // Mostrar datos del pronóstico
     const weatherForecastContainer = document.getElementById('weather-forecast-container');
-    weatherForecastContainer.innerHTML = ''; // Limpiar datos del pronóstico anterior
+    weatherForecastContainer.innerHTML = '';
 
     nextThreeDaysForecast.forEach(item => {
-        const date = new Date(item.dt * 1000); // Convertir la marca de tiempo UNIX a milisegundos
+        const date = new Date(item.dt * 1000); 
         const day = date.toLocaleDateString('en-US', { weekday: 'long' });
         const temperatureCelsius = item.main.temp;
-        const temperatureFahrenheit = (temperatureCelsius * 9 / 5) + 32; // Convertir a Fahrenheit
+        const temperatureFahrenheit = (temperatureCelsius * 9 / 5) + 32; 
         const description = item.weather[0].description;
         const iconCode = item.weather[0].icon;
         const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
 
         const forecastElement = document.createElement('div');
-        forecastElement.classList.add('weather-forecast-item'); // Agregar clase para estilos CSS
+        forecastElement.classList.add('weather-forecast-item'); 
         forecastElement.innerHTML = `
             <p>${day}: ${description}, ${temperatureFahrenheit.toFixed(1)}°F</p>
             <img src="${iconUrl}" alt="Weather Icon">
@@ -70,8 +68,8 @@ async function updateWeatherForecast() {
 }
 
 window.addEventListener('load', () => {
-    updateWeatherInCard(); // Llamada a la función para obtener el clima actual
-    updateWeatherForecast(); // Llamada a la función para obtener el pronóstico del clima
+    updateWeatherInCard(); 
+    updateWeatherForecast(); 
 });
 
 

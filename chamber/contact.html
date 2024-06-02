@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Directory - Chamber of Commerce of Tulsa</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce directory. Explore the Lopzan Chamber of Commerce of Tulsa Ok website for information about local events, attractions, and community initiatives.">
+    <title>Join the Tulsa Chamber of Commerce</title>
+    <meta name="description" content="Welcome! You're invited to join the Tulsa Chamber of Commerce and be part of a thriving community.">
     <meta name="author" content="Yolanda Lizano">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
 
     <!-- Social Media Meta -->
     <meta property="og:type" content="website">
@@ -50,13 +50,27 @@
         </div>
     </header>
 
-    <div class="view-menu"> 
-        <button id="grid-view-button"><i class="fas fa-th-large"></i> Grid View</button>
-        <button id="list-view-button"><i class="fas fa-bars"></i> List View</button>
-    </div>
+    <main>
+        <div class="contact-form-container">
+            <h2 class="form-title">Contact Us</h2>
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name <span class="required">*</span>:</label>
+                <input type="text" id="name" name="name" required>
 
-    <main id="members-container" class="member-grid-view">
-    </main>    
+                <label for="email">Email <span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                <span class="email-example">(example: email-example@whatevermail.com)</span>
+
+                <label for="phone">Phone<span class="required">*</span>:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                <label for="question">Question <span class="required">*</span>:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
 
     <footer>
         <!-- Contact Information -->
@@ -89,8 +103,7 @@
 
     <!-- External JavaScript for Last Modified Date -->
     <script src="scripts/script.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/members.js"></script>
+    <script src="scripts/join.js"></script>
+    <script src="scripts/contact.js"></script>
 </body>
 </html>
-

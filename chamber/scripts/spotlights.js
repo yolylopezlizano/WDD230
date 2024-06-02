@@ -7,25 +7,21 @@ function fetchMembers(callback) {
             return response.json();
         })
         .then(data => {
-            console.log('Fetched members data:', data); // Verificar los datos obtenidos
-            callback(data.members); // Acceder a la propiedad 'members'
+            console.log('Fetched members data:', data); 
+            callback(data.members); 
         })
         .catch(error => console.error('Error fetching members data:', error));
 }
 
-// Función para mostrar las imágenes de los miembros en los spotlights
 function displaySpotlights(members) {
-    // Verificar que members es un array
     if (!Array.isArray(members)) {
         console.error('Members data is not an array:', members);
         return;
     }
 
-    // Filtrar los miembros con nivel golden o silver
     const goldenSilverMembers = members.filter(member => member.membership_level === 'Gold' || member.membership_level === 'Silver');
-    console.log('Filtered members:', goldenSilverMembers); // Verificar los miembros filtrados
+    console.log('Filtered members:', goldenSilverMembers); 
 
-    // Seleccionar aleatoriamente dos miembros
     const randomMembers = [];
     while (randomMembers.length < 2 && goldenSilverMembers.length > 0) {
         const randomIndex = Math.floor(Math.random() * goldenSilverMembers.length);
@@ -34,9 +30,8 @@ function displaySpotlights(members) {
             randomMembers.push(member);
         }
     }
-    console.log('Randomly selected members:', randomMembers); // Verificar los miembros seleccionados
+    console.log('Randomly selected members:', randomMembers); 
 
-    // Mostrar las imágenes de los miembros en los spotlights
     const spotlightsContainer = document.querySelector('.spotlights-container');
     if (!spotlightsContainer) {
         console.error('Spotlights container not found');
@@ -53,7 +48,6 @@ function displaySpotlights(members) {
     });
 }
 
-// Llamar a la función principal cuando se carga la página
 document.addEventListener('DOMContentLoaded', function () {
     fetchMembers(displaySpotlights);
 });

@@ -21,8 +21,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1;
-    margin: 0 auto; /* Corregido */
-    max-width: 100%; /* Removido el duplicado */
+    margin: 0 auto; 
+    max-width: 100%; 
 }
 
 header {
@@ -30,7 +30,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 10px 0; /* Corregido */
+    padding: 10px 0; 
     background-color: #901010;
     color: #fff;
     flex-direction: row;
@@ -38,7 +38,7 @@ header {
 
 .chamber-title {
     font-size: 18px; 
-    margin: 10px 50px; /* Corregido */
+    margin: 10px 50px; 
 }
 
 .logo-container {
@@ -110,7 +110,7 @@ nav ul li:last-child {
 
 .main {
     display: grid;
-    grid-template-columns: 250px 1fr; /* Sidebar takes 250px, main content takes the rest */
+    grid-template-columns: 250px 1fr; 
     grid-gap: 20px;
 }
 
@@ -232,14 +232,14 @@ footer {
 .weather {
     padding: 10px;
     border-radius: 5px;
-    margin: 0 auto; /* Esto centra horizontalmente */
-    text-align: center; /* Esto centra el texto dentro del contenedor */
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 .weather h2 {
-    margin-bottom: 10px; /* Ajusta el espacio entre la ciudad y la temperatura */
-    border-bottom: 1px solid #ccc; /* Agrega una línea inferior */
-    padding-bottom: 20px; /* Espacio entre la ciudad y la temperatura */
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
 }
 .weather li {
     list-style-type: none; 
@@ -251,13 +251,13 @@ footer {
 .weather li:last-child {
     display: flex;
     align-items: center;
-    justify-content: center; /* Esto centra horizontalmente el icono */
+    justify-content: center; 
 }
 
 .weather li:last-child img {
     width: 80px;
     height: 80px;
-    margin-left: 10px; /* Espacio entre la información del clima y el icono */
+    margin-left: 10px; 
 }
 
 .weather-forecast-item {
@@ -276,7 +276,7 @@ footer {
 }
 
 .spotlights {
-    text-align: center; /* Centra horizontalmente el texto */
+    text-align: center; 
 }
 
 .spotlights-container {
@@ -627,7 +627,7 @@ form input, form select, form textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #c7bbbb;
     border-radius: 5px;
 }
 form input:required{
@@ -635,6 +635,10 @@ form input:required{
 }
 form input:required:valid{
     border-right: solid 8px green;
+}
+.email-example {
+    margin-top: 10px; 
+    display: block;
 }
 .membership-benefits {
     flex: 1;
@@ -655,8 +659,8 @@ form input:required:valid{
 }
 
 input[type="submit"]:hover {
-    background-color: #ee6e05; 
-    color: white; 
+    background-color: #9c0303; 
+    color: rgb(197, 168, 168); 
 }
 
 @media screen and (max-width: 768px) {
@@ -841,3 +845,73 @@ input[type="submit"]:hover {
     background-color: #ddd;
 }
 
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.banner-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 600px;
+    width: 70%;
+}
+
+.banner-image {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.banner .close {
+    position: absolute;
+    right: 345px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.contact-form-container {
+    text-align: center;
+    margin: 50px auto; 
+    max-width: 500px; 
+}
+
+.contact-form label {
+    display: block;
+    text-align: left; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
+}
+
+.contact-form input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+.required {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
