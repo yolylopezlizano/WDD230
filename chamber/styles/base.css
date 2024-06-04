@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1;
+    line-height: 1.5;
     margin: 0 auto; 
     max-width: 100%; 
 }
@@ -31,13 +31,16 @@ header {
     justify-content: center;
     align-items: center;
     padding: 10px 0; 
-    background-color: #901010;
+    background-color: #900; /* Increased contrast */
     color: #fff;
     flex-direction: row;
+    position: relative;
+    z-index: 1;
 }
 
 .chamber-title {
-    font-size: 18px; 
+    font-size: 22px;
+    font-weight: bold; 
     margin: 10px 50px; 
 }
 
@@ -45,10 +48,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px; 
-}
-
-.logo {
-    margin-right: auto; 
+    margin-left: -200px;
 }
 
 .logo img {
@@ -132,8 +132,8 @@ nav ul li:last-child {
 }
 
 .join-link {
-    background-color: rgba(238, 239, 245, 0.758); 
-    color: #333; 
+    background-color: #0056b3; /* Adjusted for better contrast */
+    color: #fdfcfc; 
     padding: 10px 20px;
     font-weight: bold; 
     border-radius: 5px;
@@ -141,13 +141,13 @@ nav ul li:last-child {
 }
 
 .join-link:hover {
-    background-color: rgba(250, 8, 8, 0.8); 
+    background-color: rgba(187, 8, 8, 0.8); 
     font-size: larger;
     color: #fff;
 }
 
 footer {
-    background-color: #901010;
+    background-color: #900; /* Increased contrast */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -163,6 +163,7 @@ footer {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap; 
+    margin-left: 18px;
 }
 
 .event {
@@ -181,37 +182,44 @@ footer {
     text-align: center;
 }
 
-.image-container {
-    text-align: center;
+.event{
+    border: 1px solid #ccc; 
+    margin-bottom: 10px; 
+    overflow: hidden;
 }
 
 .image-container img {
     max-width: 100%; 
     height: auto;
+    text-align: center;
 }
 
 .event img {
-    max-width: 100%; 
+    max-width: 300%; 
     height: auto; 
-    max-height: 150px; 
+    max-height: 300px; 
+    text-align: center;
 }
 
 .current-events {
     width: 100%;
-    text-align: center; 
+    text-align: center;
+    margin-bottom: 20px; 
 }
 
 .event-weather-container {
     border: 2px solid #ccc; 
-    border-radius: 5px; 
+    border-radius: 10px; 
     background-color: #f9f9f9; 
     padding: 20px; 
-    margin-top: 20px; 
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .events {
     flex: 1; 
-    margin-right: 10px; 
 }
 
 .weather-spotlights-container {
@@ -243,8 +251,6 @@ footer {
 }
 .weather li {
     list-style-type: none; 
-    padding-left: 0; 
-    margin-left: 0;
     line-height: 2;
 }
 
@@ -257,7 +263,6 @@ footer {
 .weather li:last-child img {
     width: 80px;
     height: 80px;
-    margin-left: 10px; 
 }
 
 .weather-forecast-item {
@@ -297,7 +302,7 @@ footer {
     height: auto;
     display: block;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 
 .close-btn {
@@ -309,11 +314,6 @@ footer {
     cursor: pointer;
 }
 
-.desktop-menu {
-    display: flex;
-    align-items: center;
-}
-
 .desktop-menu .menu {
     display: flex;
     list-style-type: none;
@@ -321,34 +321,32 @@ footer {
     padding: 0;
 }
 
-.desktop-menu .menu li {
-    margin-right: 20px;
-}
-
-.desktop-menu .menu li:last-child {
-    margin-right: 0;
-}
-
 .desktop-menu .menu li a {
     color: #fff;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px;
 }
 
 .desktop-menu .menu li a:hover {
-    background-color: #e9c19a;
+    background-color: #0056b3;
 }
 
 .mobile-menu {
     display: none;
 }
 
+.menu li.current a {
+    color: #6da5e6; 
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     .mobile-menu {
         display: block;
-        position: absolute;
+        position: relative;
         top: 0;
         right: 20px; 
     }
@@ -365,7 +363,7 @@ footer {
         position: absolute;
         top: 50px; 
         right: 0;
-        background-color: #f6820d; 
+        background-color: #0056b3; 
         padding: 20px;
         border-radius: 5px;
     }
@@ -377,17 +375,17 @@ footer {
     .menu li a {
         color: #fff;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .menu li a:hover {
-        background-color: #e9c19a;
+        background-color: #9b0505;
     }
 
     .desktop-menu {
         display: none;
     }
-
+    
     .event-weather-container {
         display: flex;
         flex-direction: column; 
@@ -397,11 +395,15 @@ footer {
     .weather-spotlights-container {
         flex-direction: column; 
         align-items: center; 
-        width: 100%; 
+        width: 200%; 
     }
 
     .spotlight img {
-        margin-left: 20px;
+        max-width: 80%;
+        height: auto;
+        display: block;
+        align-items: center;
+        margin-left: 30px;
     }
 
     .event-container {
@@ -413,12 +415,38 @@ footer {
         width: 100%; 
         margin: 0 0 20px 0; 
     }
+
+    .event img {
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+        height: auto; 
+        max-height: none; /* Para que la altura de la imagen no esté limitada */
+    }
+
+    .event-weather-container,
+    .spotlights-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .weather-spotlights-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .weather,
+    .spotlights {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
     
     .my-grid-container {
         grid-template-columns: 1fr; 
     }
 }
-    @media (min-width: 769px) {
+
+@media (min-width: 769px) {
     .my-grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -441,9 +469,13 @@ footer {
     }
     .photo img {
         opacity: 1; 
-        transition: none; 
+        transition: none;
     }
-       
+
+    .info-column {
+        margin-bottom: 20px; 
+    }
+
     .photo:hover img,
     .photo:hover p {
         transform: scale(1.1); 
@@ -501,7 +533,8 @@ footer {
     to {
         opacity: 1;
     }
-  }
+}
+
 .photo img.hidden {
     opacity: 0;
   }
@@ -604,6 +637,7 @@ footer {
     background-color: #f9f9f9;
     border-radius: 5px;
     margin: 20px;
+    background-color: #faeded;
 }
 .form-container h2 {
     text-align: center;
@@ -637,8 +671,8 @@ form input:required:valid{
     border-right: solid 8px green;
 }
 .email-example {
-    margin-top: 10px; 
-    display: block;
+    margin-top: 5px; 
+
 }
 .membership-benefits {
     flex: 1;
@@ -658,9 +692,13 @@ form input:required:valid{
     font-size: 16px;
 }
 
+input[type="submit"] {
+    background-color: #0056b3; 
+    color: rgb(245, 238, 238); 
+}
 input[type="submit"]:hover {
     background-color: #9c0303; 
-    color: rgb(197, 168, 168); 
+    color: rgb(245, 238, 238); 
 }
 
 @media screen and (max-width: 768px) {
@@ -672,7 +710,6 @@ input[type="submit"]:hover {
     .membership-benefits {
         margin-top: 20px;
     }
-
 }
 
 .thankyou-container {
@@ -697,14 +734,14 @@ input[type="submit"]:hover {
 .thankyou-container .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #0056b3;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .thankyou-container .button:hover {
-    background-color: #0056b3;
+    background-color: #b90404;
 }
 
 /* Style members cards */
@@ -785,9 +822,8 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     .member-list-view .member-card,
     .member-grid-view .member-card {
-        width: 90%; 
+        width: 100%; 
         align-items: center;
-        margin-left: 22px;
     }
 
     .member-grid-view .member-card {
@@ -847,7 +883,7 @@ input[type="submit"]:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #000;
     display: flex;
@@ -874,36 +910,60 @@ input[type="submit"]:hover {
 
 .banner .close {
     position: absolute;
-    right: 345px;
+    right: 340px;
     top: 10px;
     cursor: pointer;
     font-size: 24px;
 }
 
+@media screen and (max-width: 768px) {
+    .banner .close {
+        right: 40px; 
+        top: 200px; 
+    }
+}
+
 .contact-form-container {
     text-align: center;
     margin: 50px auto; 
-    max-width: 500px; 
+    max-width: 600px; 
+    background-color: #faeded;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
 }
 
 .contact-form label {
     display: block;
     text-align: left; 
+    margin-left: 20px;
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
+.contact-form input[type="tel"],
 .contact-form textarea {
     width: 100%; 
     padding: 10px; 
     margin-bottom: 10px; 
     box-sizing: border-box; 
+    margin-left: 10px;
 }
 
 .contact-form input[type="submit"] {
     width: 100%; 
-    padding: 10px; 
+    padding: 5px; 
     box-sizing: border-box; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #0056b3; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(170, 6, 6); 
 }
 .required {
     color: red;

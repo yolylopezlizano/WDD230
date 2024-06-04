@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles/normalize.css">
+
 </head>
 <body>
         <div id="banner" class="banner" style="display: none;">
             <span class="close" onclick="closeBanner()">&#10060;</span>
             <img src="images/Banner.jpg" alt="Meet and Greet" class="banner-image">
-            
         </div>
     
     <header>
@@ -38,7 +38,7 @@
             <h1 class="chamber-title">Tulsa Chamber of Commerce</h1>
             <nav class="desktop-menu">
                 <ul class="menu">
-                    <li><a href="../index.html">Home</a></li>
+                    <li class="active current"><a href="../index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -47,7 +47,7 @@
             <div class="mobile-menu">
                 <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
                 <ul class="menu">
-                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li class="active current"><a href="../index.html">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -74,14 +74,18 @@
                 <div class="event-container">
                     <!-- Event 1 -->
                     <div class="event">
-                        <h3 class="event-title">Art in Tulsa</h3>
+                        <a href="https://www.tulsago.com/explore/arts-culture/performing-arts">
+                            <h3 class="event-title">Art in Tulsa</h3>
+                        </a>
                         <div class="image-container">
                             <img src="images/evento1.jpg" alt="Art in Tulsa">
                         </div>
                     </div>
                     <!-- Event 2 -->
                     <div class="event">
-                        <h3 class="event-title">Live Concerts</h3>
+                        <a href="https://www.tulsago.com/experience">
+                            <h3 class="event-title">Live Concerts</h3>
+                        </a>
                         <div class="image-container">
                             <img src="images/evento2.jpg" alt="Live Concerts">
                         </div>
@@ -94,8 +98,8 @@
                     <h2>Current Weather</h2>
                     <ul>
                         <li>City: Tulsa, Oklahoma</li>
-                        <li>Weather: <span id="weather-temperature"></span>, <span id="weather-description"></span></li>
-                        <li><img id="weather-icon" src="weather" alt="Weather Icon"></li>                    
+                        <li>Weather: <span class="temperature" id="weather-temperature"></span>, <span class="description" id="weather-description"></span></li>
+                        <li><img class="weather-icon" id="weather-icon" alt="Weather Icon"></li>                    
                     </ul>   
         
                     <h2>Weather Forecast for the Next 3 Days</h2>
@@ -122,10 +126,10 @@
             <h2>Follow Us</h2>
             <div class="social-icons-container">
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/tu_facebook" target="_blank">
+                    <a href="https://www.facebook.com/emilylopez2011/" target="_blank" aria-label="Facebook">
                         <img src="images/facebook.jpeg" alt="Facebook" class="social-icon">
                     </a>
-                    <a href="https://www.instagram.com/tu_instagram" target="_blank">
+                    <a href="https://www.instagram.com/yolylizano/" target="_blank" aria-label="Instagram">
                         <img src="images/th.png" alt="Instagram" class="social-icon">
                     </a>
                 </div>
@@ -140,11 +144,10 @@
 
     <!-- External JavaScript  -->
     <script src="scripts/script.js"></script>
-    <script src="scripts/menu.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/spotlights.js"></script>
     <script src="scripts/banner.js"></script>
-
+    
 </body>
 </html>
 

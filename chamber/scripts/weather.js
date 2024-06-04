@@ -19,7 +19,7 @@ async function updateWeatherInCard() {
     const description = weatherData.weather[0].description;
     
     const iconCode = weatherData.weather[0].icon;
-    const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+    const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
     
     document.getElementById('weather-temperature').textContent = `${temperatureFahrenheit.toFixed(2)}°F`;
     document.getElementById('weather-description').textContent = description;
