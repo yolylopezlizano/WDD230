@@ -355,7 +355,7 @@ footer {
         display: flex;
         font-size: 24px;
         cursor: pointer;
-        align-items: center;
+        margin-left: 30px;
     }
 
     .menu {
@@ -382,6 +382,20 @@ footer {
         background-color: #9b0505;
     }
 
+    .logo-container {
+        margin-left: 10px; 
+        justify-content: center; 
+    }
+
+    .chamber-title {
+        font-size: 17px; /* Tamaño de letra más pequeño */
+        margin: 10px 20px; /* Ajuste de márgenes */
+    }
+
+    .logo img {
+        max-width: 100px; /* Tamaño más pequeño del logo */
+    }
+    
     .desktop-menu {
         display: none;
     }
